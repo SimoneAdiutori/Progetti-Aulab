@@ -1,0 +1,34 @@
+:root{
+    --primaryC: #eddf54;
+    --secondaryC: #B0AB99;
+    --blackC: #4A4737;
+    --whiteC: #F2FEDC;
+}
+
+/* Colori background */
+.bg-primaryC{
+    background-color: var(--primaryC);
+}
+.bg-secondaryC{
+    background-color: var(--secondaryC);
+}
+.bg-blackC{
+    background-color: var(--blackC);
+}
+.bg-whiteC{
+    background-color: var(--whiteC);
+}
+
+/* Colori scritte */
+.text-primaryC{
+    color: var(--primaryC);
+}
+.text-secondaryC{
+    color: var(--secondaryC);
+}
+.text-blackC{
+    color: var(--blackC);
+}
+.text-whiteC{
+    color: var(--whiteC);
+}

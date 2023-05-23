@@ -37,11 +37,16 @@
 
                 <div class="mb-3">
                     <label for="image" class="form-label">Immagine</label>
-                    <input type="file" class="form-control" id="image">
+                    <input type="file" name="image" class="form-control" id="image">
+                </div>
+
+                <div class="mb-3">
+                    <label for="price" class="form-label">Prezzo</label>
+                    <input type="text" name="price" class="form-control" id="price">
                 </div>
 
                 
-                <button type="submit" class="btn btn-primary">Inserisci</button>
+                <button type="" class="btn btn-primary">Inserisci</button>
             </form>
             </div>
         </div>

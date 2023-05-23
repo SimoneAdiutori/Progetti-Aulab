@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="{{ route('article.create') }}">Carica il tuo articolo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{{ route('article.index') }}">Lista degli articoli</a>
         </li>
         @auth
         <li class="nav-item dropdown">

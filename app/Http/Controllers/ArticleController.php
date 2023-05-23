@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
@@ -16,7 +17,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::orderBy('created_at', 'desc')->get();
+        return view('article.index', compact('articles'));
     }
 
     /**
@@ -32,11 +34,13 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
-            'title' => 'reqired|unique:articles|min:5',
-            'body' => 'reqired|min:10',
-            'image' => 'image|reqired',
-            'category' => 'reqired',
+            'title' => 'required|unique:articles|min:5',
+            'body' => 'required|min:10',
+            'image' => 'image|required',
+            'category' => 'required',
+            'price' => 'required'
         ]);
 
         Article::create([
@@ -45,6 +49,7 @@ class ArticleController extends Controller
             'image'=> $request->file('image')->store('public/images'),
             'category_id'=> $request->category,
             'user_id'=> Auth::user()->id,
+            'price' => $request->price,
         ]);
 
         return redirect(route('homepage'))->with('message' , 'Articolo inserito correttamente');
@@ -55,7 +60,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        return view('article.show', compact('article'));
     }
 
     /**

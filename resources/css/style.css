@@ -32,3 +32,15 @@
 .text-whiteC{
     color: var(--whiteC);
 }
+
+
+/* sfondo header */
+.bg-header{
+    background: rgb(74,71,55);
+    background: radial-gradient(circle, rgba(74,71,55,1) 0%, rgba(237,223,84,1) 0%);
+}
+
+.logo-header{
+    height: 150px;
+    width: 150px;
+}

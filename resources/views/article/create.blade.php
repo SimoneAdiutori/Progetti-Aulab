@@ -1,4 +1,12 @@
-<x-layout header="Carica il tuo prodotto">
+<x-layout>
+
+    <div class="container-fluid p-5 text-center">
+        <div class="row justify-content-center">
+            <div class="container">
+                <h1 class="display-1">Carica il tuo prodotto</h1>
+            </div>
+        </div>
+    </div>
 
     @if($errors->any())
         <div class="alert alert-danger">

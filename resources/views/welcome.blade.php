@@ -5,6 +5,19 @@
         </div>
     @endif
 
+    <div class="container-fluid p-5 text-center min-vh-100 d-flex justify-content-center bg-header">
+        <div class="row align-items-center">
+            <div class="container">
+                <div class="container text-primaryC">
+                    <img class="logo-header" src="{{url('/media/bancarellalogo.png')}}" alt="">
+                    <h1 class="display-1 bg-blackC text-primaryC">diNuovo</h1>
+                </div>
+                <h3 class="">Compra e vendi il tuo usato</h3>
+                <a class="btn" href=""></a>
+            </div>
+        </div>
+    </div>
+
     <div class="container p-5">
         <div class="row justify-content-center">
             @foreach($articles as $article)
@@ -17,7 +30,9 @@
                     <img src="{{ Storage::url($article->image) }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title text-center p-1"> {{ $article->title }} </h5>
-                      <p class="small text-muted text-center"> {{ $article->category->name }} </p>
+                      <p class="text-center">
+                           <a href="{{route('article.byCategory', ['category'=>$article->category->id])}}" class="small text-muted text-center">{{$article->category->name}}</a>
+                      </p>
                     </div>
                     <div class= "text-muted d-flex justify-content-center align-items-center text-center">
                         <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning"> Dettagli </a>

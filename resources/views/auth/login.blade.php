@@ -1,4 +1,13 @@
-<x-layout header="Accedi">
+<x-layout>
+
+    <div class="container-fluid p-5 text-center">
+        <div class="row justify-content-center">
+            <div class="container">
+                <h1 class="display-1">Accedi</h1>
+            </div>
+        </div>
+    </div>
+
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">

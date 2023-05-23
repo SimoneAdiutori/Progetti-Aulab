@@ -41,6 +41,10 @@
 }
 
 .logo-header{
-    height: 150px;
-    width: 150px;
+    height: 350px;
+    width: 350px;
+}
+
+.fs-perso{
+    font-size: 85px;
 }

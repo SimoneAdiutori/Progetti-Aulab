@@ -16,8 +16,10 @@
                    <p class="text-center"> {{ $article->body }} </p>
                    <hr>
                    <p class="text-center p-2 text-muted"> Creato il : {{ $article->created_at->format('d/m/Y') }} da <a href="{{route('article.byUser', ['user'=>$article->user->id])}}" class="small text-muted text-center">{{$article->user->name}}</a> </p>
-                   <a href="{{ route('article.index') }}" class="btn btn-warning"> Torna Indietro </a>
-
+                   <div class="text-center mb-3">
+                    <a href="{{ route('article.index') }}" class="btn btn-warning text-center"> Torna Indietro </a>
+                   </div>
+                   
             </div>
         </div>
     </div>

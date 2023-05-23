@@ -20,11 +20,12 @@
                     <div class="card-body">
                       <h5 class="card-title text-center p-1"> {{ $article->title }} </h5>
                     </div>
-                    <div class= "text-muted d-flex justify-content-center align-items-center text-center">
+                    <div class= "d-flex justify-content-center align-items-center text-center">
                         <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning"> Dettagli </a>
                     </div>
                     <hr>
                     <p class="text-center p-2 text-muted"> Creato il : {{ $article->created_at->format('d/m/Y') }} da {{ $article->user->name }} </p>
+                    <a href="{{ route('article.index', compact('article')) }}" class="btn btn-warning"> Torna Indietro </a>
                 </div>
                 
             </div>

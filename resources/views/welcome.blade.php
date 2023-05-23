@@ -1,4 +1,4 @@
-<x-layout header="diNuovo">
+<x-layout>
     @if(session('message'))
         <div class="alert alert-success text-center">
             {{session('message')}}
@@ -7,14 +7,14 @@
 
     <div class="container-fluid p-5 text-center min-vh-100 d-flex justify-content-center bg-header">
         <div class="row align-items-center">
-            <div class="container">
-                <div class="container text-primaryC">
-                    <img class="logo-header" src="{{url('/media/bancarellalogo.png')}}" alt="">
-                    <h1 class="display-1 bg-blackC text-primaryC">diNuovo</h1>
+               <div class="col-12 col-md-6" data-aos-duration="2500" data-aos="fade-down-right">
+                    <img class="logo-header" src="{{url('/media/bancarellalogo.png')}}" alt="immagine logo bancarella">
                 </div>
-                <h3 class="">Compra e vendi il tuo usato</h3>
+                <div class="col-12 col-md-6" data-aos-duration="2500" data-aos="fade-down-left">
+                    <h1 class="display-3 bg-blackC text-primaryC shadow fs-perso">diNuovo</h1>
+                    <h3 class="text-blackC">Compra e vendi il tuo usato</h3>
                 <a class="btn" href=""></a>
-            </div>
+                </div> 
         </div>
     </div>
 
@@ -27,7 +27,7 @@
                 <h1 class="text-center"> {{ $article->category->name }} </h1>
                 
                 <div class="card shadow">
-                    <img src="{{ Storage::url($article->image) }}" class="card-img-top" alt="...">
+                    <img src="{{ Storage::url($article->image) }}" class="card-img-top" alt="immagine articolo">
                     <div class="card-body">
                       <h5 class="card-title text-center p-1"> {{ $article->title }} </h5>
                       <p class="text-center">

@@ -25,6 +25,7 @@
                     </div>
                     <hr>
                     <p class="text-center p-2 text-muted"> Creato il : {{ $article->created_at->format('d/m/Y') }} da {{ $article->user->name }} </p>
+                    <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning"> Torna indietro </a>
                 </div>
                 
             </div>

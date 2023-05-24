@@ -48,3 +48,52 @@
 .fs-perso{
     font-size: 85px;
 }
+
+/* show */
+.img-show {
+    height: 400px;
+}
+
+.container-custom {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-custom {
+    height: 100%;
+}
+
+.div-custom {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.img-custom {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-custom {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-create {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.active{
+    background-color: var(--blackC)!important;
+    color: var(--primaryC)!important;
+    border-radius: 10px;
+}

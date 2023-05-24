@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="container-fluid p-5 text-center">
+    <div class="container-fluid pt-5 text-center">
         <div class="row justify-content-center">
             <div class="container">
                 <h1 class="display-1">Lista degli Articoli</h1>
@@ -13,10 +13,15 @@
             @foreach($articles as $article)
 
             
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 pb-5">
                 
-                <div class="card shadow my-3">
-                    <img src="{{ Storage::url($article->image) }}" class="card-img-top" alt="...">
+                <div class="card shadow my-3 card-custom">
+                    <div class="div-custom">
+
+                        <img src="{{ Storage::url($article->image) }}" class="card-img-top img-custom" alt="...">
+
+                    </div>
+                    
                     <div class="card-body">
                       <h5 class="card-title text-center p-1"> {{ $article->title }} </h5>
                       <p class="text-center">

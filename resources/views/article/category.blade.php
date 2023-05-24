@@ -13,7 +13,6 @@
             @foreach($articles as $article)
 
             <div class="col-12 col-md-3">
-                <h1 class="text-center"> {{ $article->category->name }} </h1>
                 
                 <div class="card shadow">
                     <img src="{{ Storage::url($article->image) }}" class="card-img-top" alt="...">

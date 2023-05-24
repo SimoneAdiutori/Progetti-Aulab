@@ -22,7 +22,7 @@
         </div>
 
         <div class="row justify-content-center align-items-center">
-            <form class="col-12 col-md-8 " action="" method="">
+            <form class="col-12 col-md-8 " action="{{route('careers.submit')}}" method="POST">
                 @csrf
                 <div>
                     <label for="role" class="form-label">Per quale ruole ti stai candidando?</label>

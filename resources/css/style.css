@@ -33,6 +33,17 @@
     color: var(--whiteC);
 }
 
+/* navbar */
+.nav-item:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+.logo-navbar:hover{
+    color: var(--primaryC);
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
 
 /* sfondo header */
 .bg-header{
@@ -41,12 +52,12 @@
 }
 
 .logo-header{
-    height: 350px;
-    width: 350px;
+    height: 200px;
+    width: 200px;
 }
 
 .fs-perso{
-    font-size: 85px;
+    font-size: 100px;
 }
 
 /* show */
@@ -55,8 +66,10 @@
 }
 
 .container-custom {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-custom {
@@ -96,4 +109,8 @@
     background-color: var(--blackC)!important;
     color: var(--primaryC)!important;
     border-radius: 10px;
+}
+
+.custom-puntino{
+    list-style-type:none;
 }

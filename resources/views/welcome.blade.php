@@ -1,25 +1,27 @@
 <x-layout>
     @if(session('message'))
-        <div class="alert alert-success text-center">
+        <div class="alert alert-warning text-center m-0">
             {{session('message')}}
         </div>
     @endif
 
     <div class="container-fluid p-5 text-center min-vh-100 d-flex justify-content-center bg-header">
-        <div class="row align-items-center">
+        <div class="row vh-100 w-100 justify-content-center align-items-center">
 
                 {{-- LOGO --}}
-                <div class="col-12 col-md-6" data-aos-duration="2500" data-aos="fade-down-right">
+                <div class="col-12 col-md-12 d-flex justify-content-center" data-aos-duration="2500" data-aos="fade-down-right">
                     <img class="logo-header" src="{{url('/media/bancarellalogo.png')}}" alt="immagine logo bancarella">
-                </div>
+                {{-- s</div> --}}
 
                 {{-- SCRITTA --}}
-                <div class="col-12 col-md-6" data-aos-duration="2500" data-aos="fade-down-left">
-                    <h1 class="display-1 bg-blackC text-primaryC shadow fs-perso">diNuovo</h1>
-                    <h4 class="text-blackC">Compra e vendi il tuo usato</h4>
-                    <a class="btn" href=""></a>
+                {{-- <div class="col-12 col-md-6" data-aos-duration="2500" data-aos="fade-down-left"> --}}
+                    <div>
+                        <h1 class="display-1 bg-blackC text-primaryC shadow fs-perso rounded">diNuovo</h1>
+                        <h4 class="text-blackC">Compra e vendi il tuo usato</h4>
+                        <a class="btn" href=""></a>
+                        
+                    </div> 
                 </div> 
-
         </div>
     </div>
 

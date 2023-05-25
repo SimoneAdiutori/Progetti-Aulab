@@ -2,7 +2,7 @@
 
   <div class="container-fluid text-center">
 
-    <a class="navbar-brand active-custom" href="{{ route('homepage') }}">Home</a>
+    <a class="navbar-brand bg-blackC text-primaryC p-2 rounded" href="{{ route('homepage') }}">diNuovo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,10 +30,15 @@
           </ul>
           @endforeach
         </li>
-
         <li class="nav-item">
           <a class="nav-link @if(Route::currentRouteName()=='article.index') active @endif" href="{{ route('article.index') }}">Lista degli articoli</a>
         </li>
+
+        @if(Auth::user() && Auth::user()->is_admin)
+        <li class="nav-item">
+          <a class="nav-link @if(Route::currentRouteName()=='admin.dashboard') active @endif" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
+        </li>
+        @endif
 
 
              
@@ -41,7 +46,7 @@
       </ul>
       @auth
 
-      <li class=" nav-item dropdown d-flex justify-content-end ">
+      <li class=" nav-item dropdown d-flex justify-content-md-end justify-content-center ">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Ciao {{ Auth::user()->name }}
         </a>
@@ -54,7 +59,7 @@
 
       @else
 
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown custom-puntino">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Ciao Ospite
         </a>

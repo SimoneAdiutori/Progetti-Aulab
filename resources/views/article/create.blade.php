@@ -18,9 +18,9 @@
         </div>
     @endif
 
-    <div class="container container-custom my-5 ">
+    <div class="container container-custom my-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-12 ">
+            <div class="col-12">
                 <form class="p-5 shadow bg-primaryC rounded" method="POST" action="{{ route('article.store') }}" enctype="multipart/form-data">
                     <div class="row">
 
@@ -29,7 +29,7 @@
                     
                     <div class="col-md-5 ">
 
-                        <img width="100%" class="img-create" src="/storage/images/usato_sfondo.jpg" alt="">
+                        <img width="100%" class="img-create" src="/media/usato_sfondo.jpg" alt="">
 {{-- 
                         <p>prova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova provaprova prova prova</p> --}}
 

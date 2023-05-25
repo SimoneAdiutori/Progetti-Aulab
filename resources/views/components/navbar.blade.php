@@ -34,12 +34,6 @@
           <a class="nav-link @if(Route::currentRouteName()=='article.index') active @endif" href="{{ route('article.index') }}">Lista degli articoli</a>
         </li>
 
-        @if(Auth::user() && Auth::user()->is_admin)
-        <li class="nav-item">
-          <a class="nav-link @if(Route::currentRouteName()=='admin.dashboard') active @endif" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
-        </li>
-        @endif
-
 
              
         
@@ -50,8 +44,23 @@
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Ciao {{ Auth::user()->name }}
         </a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu dropdown-menu-end">
           <li><a class="dropdown-item" href="#">Profilo</a></li>
+
+          @if(Auth::user() && Auth::user()->is_admin)
+          <li class="">
+            <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
+          </li>
+          @endif
+
+          @if(Auth::user() && Auth::user()->is_revisor)
+          <li class="">
+            <a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard Revisor</a>
+          </li>
+          @endif
+
+
+
           <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a></li>
           <form action=" {{ route('logout') }}" method="POST" class="d-none" id="form-logout">@csrf</form>
         </ul>
@@ -63,7 +72,7 @@
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Ciao Ospite
         </a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu dropdown-menu-end">
           <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
           <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
         </ul>

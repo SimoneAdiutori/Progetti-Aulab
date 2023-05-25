@@ -19,6 +19,11 @@
     background-color: var(--whiteC);
 }
 
+/* .bg-image{
+    background-image: url('/public/media/stalla.jpg');;
+    opacity: 1.5;
+} */
+
 /* Colori scritte */
 .text-primaryC{
     color: var(--primaryC);
@@ -63,6 +68,10 @@
 /* show */
 .img-show {
     height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
 }
 
 .container-custom {
@@ -94,10 +103,10 @@
     border-radius: 10px;
 }
 
-.container-custom {
+/* .container-custom {
     display: flex;
     flex-direction: row;
-}
+} */
 
 .img-create {
     object-fit: cover;
@@ -113,4 +122,15 @@
 
 .custom-puntino{
     list-style-type:none;
+}
+
+.show-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.font-header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

@@ -3,7 +3,7 @@
     <div class="container-fluid pt-5 text-center">
         <div class="row justify-content-center">
             <div class="container">
-                <h1 class="display-1">Lista degli Articoli</h1>
+                <h1 class="display-1 font-header">Lista degli Articoli</h1>
             </div>
         </div>
     </div>

@@ -11,15 +11,15 @@
 
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
           <a class="nav-link @if(Route::currentRouteName()=='article.create') active @endif" aria-current="page" href="{{ route('article.create') }}">Carica il tuo articolo</a>
-        </li>
+        </li> --}}
 
         <li class="nav-item">
           <a class="nav-link @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Lavora con noi</a>
         </li>
 
-        <li class="nav-item dropdown">
+        {{-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorie
           </a>
@@ -29,7 +29,7 @@
             <li><a class="dropdown-item " href="">{{$category->name}}</a></li>
           </ul>
           @endforeach
-        </li>
+        </li> --}}
         <li class="nav-item">
           <a class="nav-link @if(Route::currentRouteName()=='article.index') active @endif" href="{{ route('article.index') }}">Lista degli articoli</a>
         </li>
@@ -59,6 +59,12 @@
           </li>
           @endif
 
+          @if(Auth::user() && Auth::user()->is_writer)
+          <li class="">
+            <a class="dropdown-item" href="{{ route('article.create') }}">Scrivi articolo</a>
+          </li>
+          @endif
+          
 
 
           <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a></li>

@@ -40,7 +40,7 @@
 
 /* navbar */
 .nav-itemC:hover{
-    transform:scale(1.3);
+    transform:scale(1.1);
     transition: 1.1s;
 }
 
@@ -49,13 +49,13 @@
 }
 
 .logo-navbar:hover{
-    color: var(--primaryC);
+    color: var(--whiteC);
     transform:scale(1.1);
     transition: 0.5s;
 }
 
 .h-logo{
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .logo-text{
@@ -72,6 +72,7 @@
     height: 35px;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .navbar2C{
@@ -79,19 +80,16 @@
 }
 
 /* sfondo header */
-.bg-header{
-    background: rgb(74,71,55);
-    background: radial-gradient(circle, rgba(74,71,55,1) 0%, rgba(237,223,84,1) 0%);
-}
 
-.logo-header{
+
+/* .logo-header{
     height: 200px;
     width: 200px;
 }
 
 .fs-perso{
     font-size: 100px;
-}
+} */
 
 /* show */
 .img-show {
@@ -109,9 +107,15 @@
     align-items: center;
 }
 
+
+/* CARD */
 .card-custom {
     height: 100%;
 }
+.immagine-card{
+    height: 100%;
+}
+
 
 .div-custom {
     height: 100%;
@@ -144,7 +148,7 @@
 
 .active{
     background-color: var(--blackC)!important;
-    color: var(--primaryC)!important;
+    color: var(--whiteC)!important;
     /* margin-bottom: 5px;
     margin-top: 20px; */
     /* border-radius: 10px; */
@@ -161,6 +165,32 @@
 
 }
 
+
+/* HEADER */
 .font-header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.custom-header{
+    background-image: url(/public/media/foto\ mercato.jpg);
+    background-size: cover;
+    height: 60vh;
+    width: auto;
+    /* height: 500px;
+    width: 1000px; */
+}
+.scritta-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.scritta-header-bg{
+    background-color: var(--whiteC);
+    opacity: 75%;
+}
+
+/* RICERCA */
+.ricerca{
+    width: 300px;
+        
 }

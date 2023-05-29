@@ -48,7 +48,7 @@
 
 </nav>
 
-<nav class="navbar navbar-expand-lg bg-primaryC navbar2C fixed">
+<nav class="navbar navbar-expand-lg bg-whiteC navbar2C fixed">
 
   
   <div class="container-fluid text-center">
@@ -56,7 +56,7 @@
     <a class="navbar-brand text-blackC p-2 rounded" href="{{ route('homepage') }}"> 
       <i class="fa-solid fa-shop h-logo"> 
       </i> 
-      <p class="logo-text"> diNuovo </p>
+      <p class="logo-text"> Mercatini </p>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
         </li> --}}
 
         <li class="nav-item nav-itemC">
-          <a class="nav-link fs-3 p-5 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Lavora con noi</a>
+          <a class="nav-link fs-5 p-5 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Lavora con noi</a>
         </li>
         <span class="fs-1">  </span>
 
@@ -87,7 +87,7 @@
           @endforeach
         </li> --}}
         <li class="nav-item nav-itemC">
-          <a class="nav-link fs-3 p-5  @if(Route::currentRouteName()=='article.index') active @endif" href="{{ route('article.index') }}">Lista degli articoli</a>
+          <a class="nav-link fs-5 p-5  @if(Route::currentRouteName()=='article.index') active @endif" href="{{ route('article.index') }}">Lista degli articoli</a>
         </li>
 
 

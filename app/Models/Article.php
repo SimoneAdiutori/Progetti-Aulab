@@ -26,4 +26,13 @@ class Article extends Model
     public function category(){
         return $this->belongsTo(Category::class);
     }
+
+    public function toSearchableArray(){
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'body' => $this->body,
+            'category' => $this->category,
+        ];
+    }
 }

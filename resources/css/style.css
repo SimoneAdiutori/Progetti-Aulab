@@ -76,9 +76,10 @@
 }
 
 .navbar2C{
-    height: 130px;
+    height: 150px;
     background-color: var(--primaryC);
 }
+
 
 /* sfondo header */
 
@@ -148,8 +149,9 @@
 }
 
 .active{
-    background-color: var(--blackC)!important;
-    color: var(--whiteC)!important;
+    /* background-color: var(--blackC)!important; */
+    /* color: var(--whiteC)!important; */
+    border-bottom: 5px solid black;
     /* margin-bottom: 5px;
     margin-top: 20px; */
     /* border-radius: 10px; */
@@ -236,9 +238,34 @@ video {
 .form-controlC {
     border: none;
     border-radius: 20px;
+    border: 5px solid black;
+    border-right: none;
 }
 
 .btnC {
     border-radius: 20px;
-
+    border: 5px solid black;
+    border-left: none;
 }
+
+.separatore {
+    height: 200px;
+    background-color: aqua;
+}
+
+.cardC {
+    height: 300px;
+    border-radius: 0%;
+    border: 5px solid black;
+    background-size: contain;
+    background-color: aqua;
+    margin-bottom: 100px;
+}
+
+.card-imgC{
+    border-radius: 0%;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+

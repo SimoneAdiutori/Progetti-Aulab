@@ -1,4 +1,4 @@
-
+{{-- NAVBAR LOGIN --}}
 <nav class="justify-content-end d-flex navbar1C">
 
   @auth
@@ -48,6 +48,8 @@
 
 </nav>
 
+
+{{-- NAVBAR ELEMENTI --}}
 <nav class="navbar navbar-expand-lg navbar2C fixed">
 
   

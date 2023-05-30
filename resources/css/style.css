@@ -76,7 +76,7 @@
 }
 
 .navbar2C{
-    height: 150px;
+    height: 130px;
 }
 
 /* sfondo header */
@@ -220,9 +220,4 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-
-  .pogolo{
-    position: relative;
   }

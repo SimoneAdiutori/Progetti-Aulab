@@ -25,43 +25,59 @@
         {{-- </div>
     </div> --}}
 
-<<<<<<< HEAD
-    <div class="container-fluid ">
-        <div class="row justify-content-center">
-            {{-- <div class="col-12"> --}}
-                {{-- <h2 class="scritta-header-bg p-3 display-4 ">TUTTI GLI AGGIORNAMENTI SUI MERCATINI IN ITALIA!</h2> --}}
-            {{-- </div> --}}
+    {{-- <header>
 
-            <div class="video-wrapper">
-                
-                <video playsinline autoplay muted loop id="myVideo">
-                    <source src="/media/video-pot.mp4" type="video/mp4">
-                </video>
-                
-                <div class="ricerca">
-                    <form class="d-flex align-items-end" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Cosa bolle in pentola?" aria-label="Search">
-                        <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
-                    </form>
-                </div>
 
-=======
+        <div class="video-wrapper2">
+    
+            <video playsinline autoplay muted loop id="myVideo">
+                <source src="/media/video-pot2.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+
+
+    </header> --}}
+
+    <div class="headerC">
+
+    </div>
+
+
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="video-wrapper">
-                <video playsinline autoplay muted loop id="myVideo">
-                    <source src="/media/video-pot.mp4" type="video/mp4">
-                </video>
+
+            <div class="col-12 col-md-8 d-flex flex-column align-items-center position-relative headerC2">
+
                 <div class="ricerca">
+
                     <form class="d-flex align-items-end" method="GET" action="{{route('article.search')}}" role="search">
-                        <input class="form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">
-                        <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                        
+
+                        <div class="input-group mb-3">
+                            <input class="form-control form-controlC" type="search" name="query" placeholder="Cosa bolle in pentola?" aria-label="Search">
+                            <button class="btn bg-white btnC" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                        </div>
+
+                        
+                        
+                        
+                    
                     </form>
-                    
-                    
+                            
                 </div>
->>>>>>> f9a461830d11efa1cd6f5e4f0df501ca3adc7050
+                
+                <div class="video-wrapper">
+    
+                    <video playsinline autoplay muted loop id="myVideo">
+                        <source src="/media/video-pot2.mp4" type="video/mp4">
+                    </video>
+    
+                </div>
+
             </div>
+
 
 
         </div>

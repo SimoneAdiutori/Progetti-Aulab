@@ -25,6 +25,7 @@
         {{-- </div>
     </div> --}}
 
+<<<<<<< HEAD
     <div class="container-fluid ">
         <div class="row justify-content-center">
             {{-- <div class="col-12"> --}}
@@ -44,6 +45,22 @@
                     </form>
                 </div>
 
+=======
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="video-wrapper">
+                <video playsinline autoplay muted loop id="myVideo">
+                    <source src="/media/video-pot.mp4" type="video/mp4">
+                </video>
+                <div class="ricerca">
+                    <form class="d-flex align-items-end" method="GET" action="{{route('article.search')}}" role="search">
+                        <input class="form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">
+                        <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                    </form>
+                    
+                    
+                </div>
+>>>>>>> f9a461830d11efa1cd6f5e4f0df501ca3adc7050
             </div>
 
 

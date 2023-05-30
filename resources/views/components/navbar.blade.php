@@ -54,11 +54,16 @@
   <div class="container-fluid text-center">
 
     <a class="navbar-brand text-blackC p-2 rounded" href="{{ route('homepage') }}"> 
+<<<<<<< HEAD
       {{-- <i class="fa-solid fa-shop h-logo">  --}}
         {{-- <i class="fa-solid fa-lemon h-logo"></i> --}}
         {{-- <i class="fa-solid fa-shrimp h-logo"></i> --}}
         <i class="fa-regular fa-lemon h-logo"></i>
       <p class="logo-text"> Ricette </p>
+=======
+      <i class="fa-regular fa-lemon h-logo"></i>
+      <p class="logo-text"> Mercatini </p>
+>>>>>>> f9a461830d11efa1cd6f5e4f0df501ca3adc7050
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

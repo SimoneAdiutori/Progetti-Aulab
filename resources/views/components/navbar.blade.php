@@ -55,7 +55,7 @@
   
   <div class="container-fluid text-center">
 
-    <a class="navbar-brand text-blackC p-2 rounded" href="{{ route('homepage') }}"> 
+    <a class="navbar-brand text-blackC p-2 rounded navbar-logoC" href="{{ route('homepage') }}"> 
       <i class="fa-regular fa-lemon h-logo"></i>
       <p class="logo-text"> Ricette </p>
     </a>
@@ -148,5 +148,8 @@
       </form> --}}
 
     </div>
+
+    <div class="separatore-navbar"></div>
+
   </div>
 </nav>

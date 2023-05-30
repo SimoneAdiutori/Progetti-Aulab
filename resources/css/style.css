@@ -171,8 +171,16 @@
 
 /* HEADER */
 .font-header{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Francois One';
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-top: 30px;
 }
+
+.lavoraconnoi{
+    padding-top: 20px;
+}
+
 .custom-header{
     /* background-image: url(/public/media/foto\ mercato.jpg); */
     /* background-size: cover; */
@@ -238,19 +246,19 @@ video {
 .form-controlC {
     border: none;
     border-radius: 20px;
-    border: 5px solid black;
+    border: 5px solid var(--blackC);
     border-right: none;
 }
 
 .btnC {
     border-radius: 20px;
-    border: 5px solid black;
+    border: 5px solid var(--blackC);
     border-left: none;
 }
 
 .separatore {
     height: 200px;
-    background-color: aqua;
+
 }
 
 .cardC {
@@ -260,6 +268,11 @@ video {
     background-size: contain;
     background-color: aqua;
     margin-bottom: 100px;
+    
+}
+
+.cardC:hover{
+    background-color: red;
 }
 
 .card-imgC{
@@ -269,3 +282,56 @@ video {
     width: 100%;
 }
 
+.card-titleC{
+    font-family: 'staatliches';
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.card-title1C{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.veditutti {
+    font-size: 20px;
+    color: var(--blackC);
+    text-decoration: none;
+    font-family: 'staatliches';
+}
+
+.vedituttiC:hover{
+    border-bottom: 5px solid var(--blackC);
+    width: 100px;
+    justify-content: center;
+    margin: auto;
+    color: var(--blackC);
+}
+
+.veditutti:hover{
+    color: var(--blackC);
+}
+
+.vedituttiC{
+    height: 30px;
+}
+
+.freccia {
+    position: relative;
+    margin-top: 3px;
+    padding-left: 5px;
+}
+
+.navbar-logoC{
+    width: 200px;
+}
+
+.separatore-navbar{
+    width: 200px;
+}
+
+.lavori{
+    font-family: 'staatliches';
+
+}

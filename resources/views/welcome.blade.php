@@ -131,24 +131,38 @@
            @endforeach 
         </div>
         {{-- <h2 class="text-center">Vedi tutti</h2> --}}
-        <a href="{{route('article.index')}}" class="d-flex justify-content-center">Vedi tutti</a>
+        <div class="vedituttiC">
+
+            <a href="{{route('article.index')}}" class="d-flex justify-content-center veditutti">Vedi tutti 
+                <i class="fa-solid fa-arrow-right freccia"></i>
+            </a>
+
+        </div>
     </div>
 
     {{-- CARD DI PROVA (DA RIMUOVERE) --}}
     <div class="container">
         <div class="row">
-            <div class="col-6">
+
+
+
+            <div class="col-4">
 
                 <div class="card text-bg-dark cardC">
+
                     <img src="/media/foto mercato.jpg" class="card-img card-imgC" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
+                    <div class="card-img-overlay card-title1C">
+                      <h5 class="card-title card-titleC">Card title</h5>
+                      <p class="card-text"><small>Primi piatti</small></p>
                     </div>
+
                 </div>
 
             </div>
+
+
+
 
         </div>
     </div>

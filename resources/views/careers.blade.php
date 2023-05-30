@@ -1,28 +1,33 @@
 <x-layout>
 
-    <div class="container-fluid p-5 text-center ">
+    <div class="container-fluid text-center ">
         <div class="row justify-content-center">
             <div class="container">
-                <h1 class="display-1 font-header">Lavora con noi</h1>
+                {{-- <h1 class="display-1 font-header">Lavora con noi</h1> --}}
             </div>
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container lavoraconnoi ">
 
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-8 ">
-                <h2>Lavora come amministratore</h2>
+
+
+        <div class="row justify-content-center align-items-center ">
+            
+            <div class="col-12 col-md-6 ">
+                <h2 class="lavori">Lavora come amministratore</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem impedit ipsa ullam, fugit non magni quibusdam. Pariatur reiciendis ad, aliquam obcaecati repudiandae deleniti officia error quos, quibusdam praesentium sint.</p>
-                <h2>Lavora come revisore</h2>
+                <h2 class="lavori">Lavora come revisore</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem impedit ipsa ullam, fugit non magni quibusdam. Pariatur reiciendis ad, aliquam obcaecati repudiandae deleniti officia error quos, quibusdam praesentium sint.</p>
-                <h2>Lavora come redattore</h2>
+                <h2 class="lavori">Lavora come redattore</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem impedit ipsa ullam, fugit non magni quibusdam. Pariatur reiciendis ad, aliquam obcaecati repudiandae deleniti officia error quos, quibusdam praesentium sint.</p>
             </div>
-        </div>
 
-        <div class="row justify-content-center align-items-center">
-            <form class="col-12 col-md-8 " action="{{route('careers.submit')}}" method="POST">
+        </div>    
+
+        <div class="row justify-content-center align-items-center ">
+        
+            <form class="col-12 col-md-6 " action="{{route('careers.submit')}}" method="POST">
                 @csrf
                 <div>
                     <label for="role" class="form-label">Per quale ruole ti stai candidando?</label>

@@ -7,7 +7,11 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Francois+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E">
+    
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,7 +24,7 @@
     @vite(['resources/css/app.css' , 'resources/js/app.js'])
     <title>diNuovo</title>
 </head>
-<body class="bg-whiteC" >
+<body class="bg-primaryC" >
 
     <x-navbar/>
 

@@ -28,6 +28,11 @@
                         <a href="{{route('article.byCategory', ['category'=>$article->category->id])}}" class="small text-muted text-center">{{$article->category->name}}</a>
                       </p>
                       <p class="text-center display-5"> {{ $article->price }}€ </p>
+                      <p class="small fst-italic text-capitalize">
+                        @foreach($article->tags as $tag)
+                            #{{$tag->name}}
+                        @endforeach
+                      </p>
                     </div>
                     <div class= "text-muted d-flex justify-content-center align-items-center text-center">
                         <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning mb-3"> Dettagli </a>

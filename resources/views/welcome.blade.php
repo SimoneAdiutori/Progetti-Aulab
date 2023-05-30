@@ -118,6 +118,11 @@
                             <p class="text-center">
                                 <a href="{{route('article.byCategory', ['category'=>$article->category->id])}}" class="small text-muted text-center">{{$article->category->name}}</a>
                             </p>
+                            <p class="small fst-italic text-capitalize">
+                            @foreach($article->tags as $tag)
+                                #{{$tag->name}}
+                            @endforeach
+                            </p>
                         </div>
                       </div>
                     </div>

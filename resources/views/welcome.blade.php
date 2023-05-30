@@ -25,18 +25,20 @@
         {{-- </div>
     </div> --}}
 
-    <div class="container-fluid custom-header scritta-header font-header">
+    <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12">
-                {{-- <h2 class="scritta-header-bg p-3 display-4 ">TUTTI GLI AGGIORNAMENTI SUI MERCATINI IN ITALIA!</h2> --}}
-            </div>
-            <div class="ricerca">
-                <form class="d-flex align-items-end" method="GET" action="{{route('article.search')}}" role="search">
-                    <input class="form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">
-                    <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
-                </form>
-                
-                
+            <div class="video-wrapper">
+                <video playsinline autoplay muted loop id="myVideo">
+                    <source src="/media/video-pot.mp4" type="video/mp4">
+                </video>
+                <div class="ricerca">
+                    <form class="d-flex align-items-end" method="GET" action="{{route('article.search')}}" role="search">
+                        <input class="form-control me-2" type="search" name="query" placeholder="Cosa stai cercando?" aria-label="Search">
+                        <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                    </form>
+                    
+                    
+                </div>
             </div>
         </div>
     </div>

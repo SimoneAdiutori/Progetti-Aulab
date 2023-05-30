@@ -66,8 +66,13 @@
                             <label for="price" class="form-label">Prezzo</label>
                             <input type="text" name="price" class="form-control" id="price">
                         </div>
-        
-                        
+
+                        <div class="mb-3">
+                            <label for="tags" class="form-label">Tags:</label>
+                            <input name="tags" class="form-control" id="tags" value="{{old('tags')}}">
+                            <span class="small fst-italic">Dividi ogni tag con una virgola</span>
+                        </div>
+                                
                         <button type="" class="btn btn-primary">Inserisci</button>
         
         

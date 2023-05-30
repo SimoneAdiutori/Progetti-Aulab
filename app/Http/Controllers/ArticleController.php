@@ -63,10 +63,11 @@ class ArticleController extends Controller
             'body' => 'required|min:10',
             'image' => 'image|required',
             'category' => 'required',
-            'price' => 'required'
+            'price' => 'required',
+            'tags' => 'required',
         ]);
 
-        Article::create([
+        $article = Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
             'image'=> $request->file('image')->store('public/images'),
@@ -74,6 +75,15 @@ class ArticleController extends Controller
             'user_id'=> Auth::user()->id,
             'price' => $request->price,
         ]);
+
+        $tags = explode(', ', $request->tags);
+
+        foreach($tags as $tag){
+            $newTag = Tag::updateOrCreate([
+                'name' => $tag,
+            ]);
+            $article->tags()->attach($newTag);
+        }
 
         return redirect(route('homepage'))->with('message' , 'Articolo inserito correttamente');
     }

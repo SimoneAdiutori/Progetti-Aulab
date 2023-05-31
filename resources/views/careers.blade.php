@@ -12,7 +12,7 @@
 
 
 
-        <div class="row justify-content-center align-items-center ">
+        <div class="row justify-content-center align-items-center mt-5 text-center">
             
             <div class="col-12 col-md-6 ">
                 <h2 class="lavori">Lavora come amministratore</h2>
@@ -25,7 +25,9 @@
 
         </div>    
 
-        <div class="row justify-content-center align-items-center ">
+<div class="hrC"></div>
+
+        <div class="row justify-content-center align-items-center pb-5">
         
             <form class="col-12 col-md-6 " action="{{route('careers.submit')}}" method="POST">
                 @csrf
@@ -50,7 +52,7 @@
                 </div>
                 
                 <div class="mt-2">
-                    <button class="btn btn-info text-white">Invia la candidatura</button>
+                    <button class="btn btn-info text-white btn-login2">Invia la candidatura</button>
                 </div>
             </form>
         </div>

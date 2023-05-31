@@ -55,9 +55,13 @@
                     <form class="d-flex align-items-end" method="GET" action="{{route('article.search')}}" role="search">
                         
 
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-3 searchC">
                             <input class="form-control form-controlC" type="search" name="query" placeholder="Cosa bolle in pentola?" aria-label="Search">
-                            <button class="btn bg-white btnC" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                            <button class="btn bg-white btnC" type="submit">
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                                {{-- <i class="fa-solid fa-magnifying-glass"></i> --}}
+                            </button>
                         </div>
 
                         
@@ -83,98 +87,76 @@
 
     <div class="separatore"></div>
 
-    <div class="container p-5">
-        <div class="row justify-content-center">
-            <h2 class="text-center pb-5"></h2>
-            @foreach($articles as $article)
 
-            
-            <div class="col-12 col-md-6">
-                {{-- <h1 class="text-center"> {{ $article->category->name }} </h1> --}}
-                
-                {{-- <div class="card shadow mb-3 bg-whiteC border-3">
-                    <img src="{{ Storage::url($article->image) }}" class="card-img-top" alt="immagine articolo">
-                    <div class="card-body">
-                      <h5 class="card-title text-center p-1"> {{ $article->title }} </h5>
-                      <p class="text-center">
-                           <a href="{{route('article.byCategory', ['category'=>$article->category->id])}}" class="small text-muted text-center">{{$article->category->name}}</a>
-                      </p>
-                      <p class="text-center display-5"> {{ $article->price }}€ </p>
-                    </div>
-                    <div class= "text-muted d-flex justify-content-center align-items-center text-center pb-3">
-                        <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning"> Dettagli </a>
-                    </div>
-                </div> --}}
+    
+    <div class="">
 
-                <div class="card mb-3 shadow bg-white border-3">
-                    <div class="row g-0">
-                      <div class="col-md-4 ">
-                        <img src="{{ Storage::url($article->image) }}" class="img-fluid rounded-start " alt="immagine articolo">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ $article->title }}</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="text-center">
-                                <a href="{{route('article.byCategory', ['category'=>$article->category->id])}}" class="small text-muted text-center">{{$article->category->name}}</a>
-                            </p>
-                            <p class="small fst-italic text-capitalize">
-                            @foreach($article->tags as $tag)
-                                #{{$tag->name}}
-                            @endforeach
-                            </p>
-                        </div>
-                        @if($article->category)
-                            <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize">{{$article->category->name}}</a>
-                        @else
-                            <p class="small text-muted fst-italic text-capitalize">
-                                Non categorizzato
-                            </p>
-                        @endif
-                      </div>
-                    </div>
-                </div>   
-            </div>
-           @endforeach 
-        </div>
-        {{-- <h2 class="text-center">Vedi tutti</h2> --}}
-        <div class="vedituttiC">
+        <a class="d-flex justify-content-center veditutti">Le ultime ricette inserite... 
+        </a>
 
-            <a href="{{route('article.index')}}" class="d-flex justify-content-center veditutti">Vedi tutti 
-                <i class="fa-solid fa-arrow-right freccia"></i>
-            </a>
-
-        </div>
     </div>
 
-    {{-- CARD DI PROVA (DA RIMUOVERE) --}}
-    <div class="container">
-        <div class="row">
 
+    <div class="container p-5">
+        <div class="row justify-content-center">
 
+            @foreach($articles as $article)
 
-            <div class="col-4">
+            <div class="col-md-4 col-12">
 
                 <div class="card text-bg-dark cardC">
 
-                    <img src="/media/foto mercato.jpg" class="card-img card-imgC" alt="...">
+                    <img src="{{ Storage::url($article->image) }}" class="card-img card-imgC" alt="immagine articolo">
 
                     <div class="card-img-overlay card-title1C">
-                      <h5 class="card-title card-titleC">Card title</h5>
-                      <p class="card-text"><small>Primi piatti</small></p>
+
+                      <h5 class="card-title card-titleC">{{ $article->title }}</h5>
+
+                      <p class="card-text "><small>
+                        @if($article->category)
+                        <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize card-categoryC">{{$article->category->name}}</a>
+                    @else
+                        <p class="small text-muted fst-italic text-capitalize card-textC">
+                            Non categorizzato
+                        </p>
+                    @endif
+                    </small></p>
+
+                    <p class="small fst-italic text-capitalize card-tagC">
+                        @foreach($article->tags as $tag)
+                            #{{$tag->name}}
+                        @endforeach
+                    </p>
+
+                    <div class= "text-muted d-flex justify-content-end align-items-end text-end ">
+                        <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning freccia"> 
+                                
+                            <div>
+                                <i class="fa-solid fa-arrow-right freccia3"></i>                      
+                            </div>
+                        </a>
+                    </div>
+
                     </div>
 
                 </div>
 
             </div>
+            
+            @endforeach
 
+            
+        </div>
 
+        <div class="vedituttiC">
 
+            <a href="{{route('article.index')}}" class="d-flex justify-content-center veditutti">Vedi tutti 
+                <i class="fa-solid fa-arrow-right freccia3"></i>
+            </a>
 
         </div>
     </div>
-
-    
+  
 
 
 </x-layout>

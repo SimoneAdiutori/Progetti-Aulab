@@ -24,7 +24,7 @@
 
       @if(Auth::user() && Auth::user()->is_writer)
       <li class="">
-        <a class="dropdown-item" href="{{ route('article.create') }}">Scrivi articolo</a>
+        <a class="dropdown-item" href="{{ route('article.create') }}">Nuova ricetta</a>
       </li>
       @endif
       
@@ -58,7 +58,6 @@
     {{-- LOGO --}}
     <a class="navbar-brand text-blackC p-2 rounded navbar-logoC" href="{{ route('homepage') }}"> 
       <i class="fa-regular fa-lemon h-logo"></i>
-      {{-- <p class="logo-text"> Ricette </p> --}}
     </a>
     <button class="navbar-toggler tendina-login2 tendina-login" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon "></span>

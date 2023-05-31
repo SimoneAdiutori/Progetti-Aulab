@@ -172,6 +172,8 @@
             
         </div>
 
+
+
         <div class="vedituttiC">
 
             <a href="{{route('article.index')}}" class="d-flex justify-content-center veditutti">Vedi tutti 

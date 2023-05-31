@@ -1,6 +1,6 @@
-<table class="table table-striped table-hover border">
+<table class="table table-hover border bg-primaryC tableC">
     <thead class="table-dark">
-      <tr>
+      <tr class="tableC">
         <th scope="col">#</th>
         <th scope="col">Titolo</th>
         <th scope="col">Sottotitolo</th>

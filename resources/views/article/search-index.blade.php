@@ -17,41 +17,62 @@
 
                 <div class="card text-bg-dark cardC">
 
+                    {{-- IMMAGINE (SFONDO) --}}
                     <img src="{{ Storage::url($article->image) }}" class="card-img card-imgC" alt="immagine articolo">
 
-                    <div class="card-img-overlay card-title1C">
+                    {{-- CORPO --}}
+                    <div class="card-img-overlay boxC">
+                        
+                        {{-- TITOLO E CATEGORIA --}}
+                        <div class=" boxcard1">
 
-                        <h5 class="card-title card-titleC">{{ $article->title }}</h5>
+                            {{-- TITOLO --}}
+                            <h5 class="card-title card-titleC">{{ $article->title }}</h5>
 
-                        <p class="card-text ">
-                            <small>
-                            @if($article->category)
-                            <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize card-categoryC">{{$article->category->name}}</a>
-                            @else
-                            <p class="small text-muted fst-italic text-capitalize card-textC">
-                                Non categorizzato
+                            {{-- CATEGORIA --}}
+                            <p class="card-categoryC">
+                                <small>
+                                
+                                @if($article->category)
+                                
+                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize card-categoryC">{{$article->category->name}}</a>
+                                
+                                @else
+                                
+                                <p class="small text-muted fst-italic text-capitalize card-textC">
+                                    Non categorizzato
+                                </p>
+                                
+                                @endif
+    
+                                </small>
                             </p>
-                            @endif
-                            </small>
-                        </p>
+                            
+                        </div >
 
-                        <p class="small fst-italic text-capitalize card-tagC">
-                            @foreach($article->tags as $tag)
+                        {{-- TAG --}}
+                        <div class="bg-whiteC tagC">
+
+                            <p class="small fst-italic text-capitalize card-tagC">
+                                @foreach($article->tags as $tag)
                                 #{{$tag->name}}
-                            @endforeach
-                        </p>
+                                @endforeach
+                            </p>
 
-                        <div class= "text-muted d-flex justify-content-end align-items-end text-end ">
-                            <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning freccia"> 
+                        </div>
+                        
+                        {{-- FRECCIA DETTAGLIO --}}
+                        <div class= "text-muted freccetta">
+                            <a href="{{ route('article.show', compact('article')) }}" class="btn bg-primaryC freccia"> 
                                     
                                 <div>
-
-                                    <i class="fa-solid fa-arrow-right freccia1"></i>                      
+                                    <i class="fa-solid fa-arrow-right freccia3"></i>                      
                                 </div>
+
                             </a>
                         </div>
-                    </div>
 
+                    </div>
 
                 </div>
 

@@ -22,7 +22,7 @@
             <div class="col-5">
                 <form class="p-5 shadow bg-primaryC rounded formcreateC" method="POST" action="{{ route('article.store') }}" enctype="multipart/form-data">
                     <div class="row">
-                        <h1 class="display-1 font-header text-center">Inserisci la ricetta</h1>
+                        <h1 class="display-1 font-header text-center">Nuova ricetta</h1>
 
 
 

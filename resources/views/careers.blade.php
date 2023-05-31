@@ -52,7 +52,7 @@
                 </div>
                 
                 <div class="mt-2">
-                    <button class="btn btn-info text-white btn-login2">Invia la candidatura</button>
+                    <button class="btn btn-login2">Invia la candidatura</button>
                 </div>
             </form>
         </div>

@@ -22,6 +22,12 @@
       </li>
       @endif
 
+      @if(Auth::user()->is_writer)
+      <li class="">
+        <a class="dropdown-item" href="{{ route('writer.dashboard') }}">Dashboard Redattore</a>
+      </li>
+      @endif
+
       @if(Auth::user() && Auth::user()->is_writer)
       <li class="">
         <a class="dropdown-item" href="{{ route('article.create') }}">Nuova ricetta</a>

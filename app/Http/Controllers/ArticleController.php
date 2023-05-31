@@ -102,7 +102,7 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        return view('article.edit' , compact('article'));
     }
 
     /**
@@ -110,7 +110,42 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $request->validate([
+            'title' => 'required|unique:articles,title|min:5' . article->id,
+            'body' => 'required|min:10',
+            'image' => 'image',
+            'category' => 'required',
+            'price' => 'required',
+            'tags' => 'required',
+        ]);
+
+        $article->update([
+            'title'=> $request->title,
+            'body'=> $request->body,
+            'category_id'=> $request->category,
+            'price' => $request->price,
+        ]);
+
+        if($request->image){
+            Storage::delete($article->image);
+            $article->update([
+                'image' => $request->file('image')->store('public/images'),
+            ]);        
+        }
+
+        $tags = explode(', ', $request->tags);
+        $newTags = [];
+
+        foreach($tag as $tag){
+            $newTag = Tag::updateOrCreate([
+                'name' => $tag,
+            ]);
+            $newTags[] = $newTag->id;                  
+        }
+        
+        $article->tags()->sync($newTags);
+
+        return redirect( route('writer.dashboard'))->with('message' , 'Hai aggiornato correttamente la tua ricetta');
     }
 
     /**

@@ -42,7 +42,7 @@
                         </p>
 
                         <div class= "text-muted d-flex justify-content-end align-items-end text-end ">
-                            <a href="{{ route('article.show', compact('article')) }}" class="btn btn-warning freccia"> 
+                            <a href="{{ route('article.show', compact('article')) }}" class="btn bg-primaryC freccia"> 
                                     
                                 <div>
 

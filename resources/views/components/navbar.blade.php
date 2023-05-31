@@ -77,6 +77,14 @@
           <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Lavora con noi</a>
         </li>
 
+        <li class="nav-item nav-itemC">
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Chi siamo</a>
+        </li>
+
+        <li class="nav-item nav-itemC">
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Contatti</a>
+        </li>
+
       </ul>
         
     </div>

@@ -284,13 +284,8 @@ video {
     border-radius: 0%;
     border: 5px solid var(--blackC);
     background-size: contain;
-    background-color: aqua;
     margin-bottom: 50px;
     
-}
-
-.cardC:hover{
-    background-color: red;
 }
 
 .card-imgC{
@@ -316,11 +311,16 @@ video {
     margin-top: 0px;
     font-weight: 900;
     margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: var(--primaryC);
 
 }
 
 .card-tagC{
     margin-bottom: 0px;
+    /* background-color: var(--primaryC); */
+    color: var(--blackC);
+    width: auto;
 }
 
 .veditutti {
@@ -424,6 +424,12 @@ video {
     text-align: center;
 }
 
+.formcreateC{
+    border: 5px solid var(--blackC);
+    background-color: var(--primaryC);
+    text-align: start;
+}
+
 .btn-login{
     width: 100px;
     background-color: var(--primaryC);
@@ -461,4 +467,41 @@ video {
 
 footer{
     border-top: 5px solid var(--blackC);
+}
+
+#myVideo{
+    border: 5px solid var(--blackC);
+}
+
+.freccetta{
+    align-items: end;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.boxC{
+    align-items: start;
+    display: flex;
+    /* justify-content:space-between; */
+    flex-direction: column;
+}
+
+.boxcard1{
+    width: 70%;
+    background-color: var(--primaryC);
+    color: var(--blackC);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* border: 5px solid var(--blackC); */
+}
+
+.tagC{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }

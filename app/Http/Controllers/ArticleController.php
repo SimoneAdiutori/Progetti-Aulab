@@ -153,7 +153,13 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
-        //
+        foreach($article->tags as $tag){
+            $article->tags()->detach($tag);
+        }
+
+        $article->delete();
+
+        return redirect( route('writer.dashboard'))->with('message' , 'Hai cancellato correttamente la tua ricetta');
     }
 
     public function articleSearch(Request $request){

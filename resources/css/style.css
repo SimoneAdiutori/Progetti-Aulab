@@ -582,9 +582,15 @@ footer{
     margin-bottom: 200px;
 }
 
+.scheda{
+    height: 250px;
+    width: 250px;
+    display: flex;
+}
+
 .fotoprofilo{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border: 5px solid var(--blackC);
     border-radius: 50%;
     display: flex;
@@ -629,4 +635,8 @@ footer{
 .liC2{
     text-decoration: none;
     list-style-type: none;
+}
+
+.img-chisiamo{
+    object-fit: cover;
 }

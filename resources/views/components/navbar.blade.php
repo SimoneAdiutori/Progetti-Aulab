@@ -82,11 +82,11 @@
         </li>
 
         <li class="nav-item nav-itemC">
-          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='chisiamo') active @endif" aria-current="page" href="{{ route('chisiamo') }}">Chi siamo</a>
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='chisiamo') active @endif" aria-current="page" href="{{ route('chisiamo') }}">Storia</a>
         </li>
 
         <li class="nav-item nav-itemC">
-          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Contattaci</a>
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='contattaci') active @endif" aria-current="page" href="{{ route('contattaci') }}">Chi siamo</a>
         </li>
 
       </ul>

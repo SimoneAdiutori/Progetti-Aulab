@@ -61,4 +61,8 @@ class PublicController extends Controller
     public function chisiamo() {
         return view('chisiamo');
     }
+
+    public function contattaci() {
+        return view('contattaci');
+    }
 }

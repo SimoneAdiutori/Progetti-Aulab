@@ -14,14 +14,16 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 d-flex justify-content-center">
 
-                <div class="img-fluid d-flex justify-content-center">
+                <div class="img-fluid d-flex justify-content-start flex-column">
                      <img class="img-show" src="{{ Storage::url($article->image) }}" alt="immagine di {{ $article->title }}">
-                </div>
+                     <i class="fa-regular fa-clock clockC"></i>
+                     <span class="price">{{ $article->price }}min</span>
+                    </div>
 
             </div>
             <div class="col-12 col-md-6 ">
 
-                <p class="text-start"> {{ $article->body }} </p>
+                <p class="text-start bodyC"> {{ $article->body }} </p>
                 <hr>
                 <p class="text-center p-2 text-muted"> Creato il : {{ $article->created_at->format('d/m/Y') }} da <a href="{{route('article.byUser', ['user'=>$article->user->id])}}" class="small text-muted text-center">{{$article->user->name}}</a> </p>
 

@@ -8,7 +8,6 @@
       {{ Auth::user()->name }}
     </a>
     <ul class="dropdown-menu dropdown-menu-end tendina-login">
-      <li><a class="dropdown-item" href="#">Profilo</a></li>
 
       @if(Auth::user() && Auth::user()->is_admin)
       <li class="">
@@ -18,7 +17,7 @@
 
       @if(Auth::user() && Auth::user()->is_revisor)
       <li class="">
-        <a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard Revisor</a>
+        <a class="dropdown-item" href="{{ route('revisor.dashboard') }}">Dashboard Revisore</a>
       </li>
       @endif
 
@@ -83,11 +82,11 @@
         </li>
 
         <li class="nav-item nav-itemC">
-          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Chi siamo</a>
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='chisiamo') active @endif" aria-current="page" href="{{ route('chisiamo') }}">Chi siamo</a>
         </li>
 
         <li class="nav-item nav-itemC">
-          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Contatti</a>
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Contattaci</a>
         </li>
 
       </ul>

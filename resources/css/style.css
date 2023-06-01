@@ -2,7 +2,7 @@
     --primaryC: rgb(255, 245, 121);
     --secondaryC: #B0AB99;
     --blackC: #4A4737;
-    --whiteC: #F2FEDC;
+    --whiteC: #fafdec;
 }
 
 /* Colori background */
@@ -231,9 +231,17 @@
     width: 100%;
 }
 
+
+.video-wrapper-create{
+    /* position: absolute; */
+    left: 0;
+    object-fit: contain;
+}
+
 video {
     object-fit: cover;
-    width: 100%;    
+    width: 100%;   
+    border: 5px solid var(--blackC); 
 }
 
 .headerC {
@@ -285,7 +293,7 @@ video {
     border: 5px solid var(--blackC);
     background-size: contain;
     margin-bottom: 50px;
-    
+    /* margin-left: 50px; */
 }
 
 .card-imgC{
@@ -293,6 +301,11 @@ video {
     background-size:cover;
     height: 100%;
     width: 100%;
+}
+
+.cardC:hover{
+    transform:scale(1.1);
+    transition: 1.1s;
 }
 
 .card-titleC{
@@ -313,7 +326,17 @@ video {
     margin-bottom: 0px;
     padding-bottom: 0px;
     color: var(--primaryC);
+}
 
+.card-textC{
+    margin-bottom: 0px;
+    color: var(--blackC);
+
+}
+
+.categoryC{
+    margin-bottom: 0px;
+    color: var(--blackC);
 }
 
 .card-tagC{
@@ -448,6 +471,7 @@ video {
     background-color: var(--primaryC);
     border: 5px solid var(--blackC);
     color: var(--blackC);
+
 }
 
 .btn-login2{
@@ -467,6 +491,11 @@ video {
     background-color: var(--blackC);
     color: var(--primaryC);
     border: 5px solid transparent;
+}
+
+.div-C{
+    display: flex;
+    justify-content: end;
 }
 
 .freccia2{
@@ -507,10 +536,12 @@ footer{
 .boxcard1{
     width: 80%;
     background-color: var(--primaryC);
+    /* opacity: 0.8; */
     color: var(--blackC);
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: -20px;
+    padding: 10px;
     /* border: 5px solid var(--blackC); */
 }
 
@@ -522,4 +553,80 @@ footer{
 
 .tableC{
     border: 5px solid var(--blackC);
+}
+
+.clockC{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--blackC);
+}
+
+.price{
+    font-size: 40px;
+    font-family: 'staatliches';
+    text-align: center;
+    color: var(--blackC);
+}
+
+.bodyC {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.videoprova{
+    background-color: red;
+}
+
+.chisiamo {
+    background-color: aqua;
+    margin-bottom: 200px;
+}
+
+.fotoprofilo{
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--blackC);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.testoprofilo{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.iconC{
+    color: var(--blackC);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nomecognome {
+    font-family: 'Francois One';
+}
+
+.title-chisiamo{
+    /* font-family: 'Francois One'; */
+    font-family: 'staatliches';
+
+    text-align: center;
+}
+
+.testichisiamo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 100px;
+}
+
+.liC{
+    font-family: 'Francois One';
+    font-size: 20px;
+
+}
+
+.liC2{
+    text-decoration: none;
+    list-style-type: none;
 }

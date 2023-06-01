@@ -4,9 +4,9 @@
         <th scope="col">#</th>
         <th scope="col">Titolo</th>
         <th scope="col">Categoria</th>
+        <th scope="col">User</th>
         <th scope="col">Tags</th>      
         <th scope="col">Creato il</th>
-        <th scope="col">Azioni</th>
       </tr>
     </thead>
     <tbody>
@@ -14,8 +14,8 @@
         <tr>
             <th scope="row">{{ $article->id }}</th>
             <td>{{ $article->title }}</td>
-            <td>{{ $article->category }}</td>
-            <td>{{ $article->user->name ?? 'Non categorizzato'}}</td>
+            <td>{{ $article->category->name ?? 'Non categorizzato'}}</td>
+            <td>{{ $article->user->name}}</td>
             <td>
                @foreach($article->tags as $tag)
                     {{ $tag->name }},

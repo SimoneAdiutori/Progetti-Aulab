@@ -57,4 +57,8 @@ class PublicController extends Controller
     public function careers() {
         return view('careers');
     }
+
+    public function chisiamo() {
+        return view('chisiamo');
+    }
 }

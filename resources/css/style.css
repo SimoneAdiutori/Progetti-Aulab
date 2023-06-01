@@ -83,10 +83,12 @@
     text-align: end;
     border: 3px solid var(--blackC);
     border-radius: 0%;
+    display: inline-block;
+    margin-left: auto;
 }
 
 .navbar2C{
-    height: 100px;
+    min-height: 100px;
     background-color: var(--primaryC);
     border-bottom: 5px solid var(--blackC);
     border-top: 5px solid var(--blackC);
@@ -250,17 +252,13 @@ video {
 }
 
 .headerC2 {
-    top: -500px;
+    top: -70vh;
 }
 
-@media screen and (max-width:700px) {
-    .headerC {
-        height: 35vh;
-    }
-
-    .headerC2 {
-        top: -180px;
-    }
+@media screen and (max-width:350px) {
+.ricerca {
+    width: 200px;
+}
 }
 
 .form-controlC {
@@ -283,8 +281,49 @@ video {
 }
 
 .separatore {
-    height: 200px;
+    height: 100px;
+}
 
+.separatore-navbar{
+    width: 200px;
+}
+
+@media screen and (min-width:1500px) {
+    .separatore {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .separatore {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .separatore {
+        display: no;
+    }
+
+    .headerC {
+        height: 40vh;
+    }
+
+    .headerC2{
+        top: -35vh;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .separatore {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .separatore {
+        height: 200px;
+    }
 }
 
 .cardC {
@@ -405,15 +444,12 @@ video {
     }
 
     .tendina-login2{
-        margin-right: 0px;
+        /* margin-right: 0px; */
         /* position: absolute; */
-        right: 20px;
+        /* right: 20px; */
     }
 }
 
-.separatore-navbar{
-    width: 200px;
-}
 
 .lavori{
     font-family: 'staatliches';
@@ -464,6 +500,11 @@ video {
     border: 5px solid var(--blackC);
     background-color: var(--primaryC);
     text-align: start;
+}
+
+.tendina-login2{
+    background-color: var(--whiteC);
+    border: 5px solid var(--blackC);
 }
 
 .btn-login{

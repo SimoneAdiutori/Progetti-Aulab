@@ -45,7 +45,7 @@ class PublicController extends Controller
     }
 
     public function __construct(){
-        $this->middleware('auth')->except('homepage');
+        $this->middleware('auth')->except('homepage', 'chisiamo', 'contattaci');
     }
           
 

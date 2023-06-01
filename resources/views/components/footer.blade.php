@@ -13,7 +13,7 @@
         commodi optio pariatur est quia magnam eum harum corrupti dicta,
         aliquam sequi voluptate quas.
       </p>
-    </section>
+    {{-- </section>
     <!-- Section: Text -->
 
 
@@ -106,7 +106,7 @@
         <!--Grid column-->
       </div>
       <!--Grid row-->
-    </section>
+    </section> --}}
     <!-- Section: Links -->
 
   </div>

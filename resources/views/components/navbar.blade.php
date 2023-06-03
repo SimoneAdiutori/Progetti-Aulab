@@ -35,7 +35,7 @@
       
 
 
-      <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a></li>
+      <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Esci</a></li>
       <form action=" {{ route('logout') }}" method="POST" class="d-none" id="form-logout">@csrf</form>
     </ul>
   </li>

@@ -45,7 +45,7 @@ class PublicController extends Controller
     }
 
     public function __construct(){
-        $this->middleware('auth')->except('homepage', 'chisiamo', 'contattaci');
+        $this->middleware('auth')->except('homepage', 'storia', 'chisiamo');
     }
           
 
@@ -58,11 +58,11 @@ class PublicController extends Controller
         return view('careers');
     }
 
-    public function chisiamo() {
-        return view('chisiamo');
+    public function storia() {
+        return view('storia');
     }
 
-    public function contattaci() {
-        return view('contattaci');
+    public function chisiamo() {
+        return view('chisiamo');
     }
 }

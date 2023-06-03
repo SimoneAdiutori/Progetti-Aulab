@@ -1,12 +1,13 @@
-<table class="table table-striped table-hover border">
-    <thead class="table-dark">
+<table class="table table-hover border tableC">
+    <thead class="tableC">
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Titolo</th>
-        <th scope="col">Categoria</th>
-        <th scope="col">User</th>
-        <th scope="col">Tags</th>      
-        <th scope="col">Creato il</th>
+        <th class="th1">#</th>
+        <th class="th2">Titolo</th>
+        <th class="th3">Categoria</th>
+        <th class="th4">User</th>
+        <th class="th5">Tags</th>      
+        <th class="th6">Creato il</th>
+        <th class="th7 text-center">Azioni</th>
       </tr>
     </thead>
     <tbody>
@@ -18,19 +19,19 @@
             <td>{{ $article->user->name}}</td>
             <td>
                @foreach($article->tags as $tag)
-                    {{ $tag->name }},
+                    {{ $tag->name }}
                @endforeach    
             </td>
             <td>
                 {{ $article->created_at->format('d/m/Y')}}
             </td>
-            <td>
-                <a href="{{ route('article.show' , compact('article'))}}" class="btn btn-info text-white">Leggi la ricetta</a>
-                <a href="{{ route('article.edit' , compact('article'))}}" class="btn btn-warning text-white">Apporta le tue modifiche</a>
+            <td class="text-center">
+                <a href="{{ route('article.show' , compact('article'))}}" class="btn btn-info text-white"><i class="fa-solid fa-eye"></i></a>
+                <a href="{{ route('article.edit' , compact('article'))}}" class="btn btn-warning text-white"> <i class=" fa-solid fa-pen-to-square"></i> </a>
                 <form action="{{route('article.destroy', compact('article'))}}" method="post" class="d-inline">
                     @csrf
                     @method('delete')
-                    <button type="submit" class="btn btn-danger">Elimina la ricetta</button>
+                    <button type="submit" class="btn btn-danger"><i class="fa-solid fa-xmark"></i></button>
                 </form>
             </td>
         </tr>

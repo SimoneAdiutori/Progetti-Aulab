@@ -54,7 +54,7 @@
 
                     <form class="d-flex align-items-end" method="GET" action="{{route('article.search')}}" role="search">
                         
-                        <div class="input-group mb-3 searchC">
+                        <div class="input-group mb-3 ">
                             <input class="form-control form-controlC" type="search" name="query" placeholder="Cosa bolle in pentola?" aria-label="Search">
                             <button class="btn bg-white btnC" type="submit">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -71,7 +71,7 @@
                 <div class="video-wrapper">
     
                     <video playsinline autoplay muted loop id="myVideo">
-                        <source src="/media/video-pot2.mp4" type="video/mp4">
+                        <source src="/media/uovo.mp4" type="video/mp4">
                     </video>
     
                 </div>

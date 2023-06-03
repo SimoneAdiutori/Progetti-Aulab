@@ -30,7 +30,7 @@
                             <h5 class="card-title card-titleC">{{ $article->title }}</h5>
 
                             {{-- CATEGORIA --}}
-                            <p class="card-categoryC">
+                            <p class="categoryC">
                                 <small>
                                 
                                 @if($article->category)
@@ -79,6 +79,7 @@
             </div>
             
             @endforeach
+            
 
             {{-- @foreach($articles as $article)
 

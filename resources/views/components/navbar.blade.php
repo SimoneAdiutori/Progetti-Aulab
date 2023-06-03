@@ -72,6 +72,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+        <li class="nav-item nav-itemC">
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='chisiamo') active @endif" aria-current="page" href="{{ route('chisiamo') }}">Chi siamo</a>
+        </li>
+        
+        <li class="nav-item nav-itemC">
+          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='storia') active @endif" aria-current="page" href="{{ route('storia') }}">Storia</a>
+        </li>
         
         <li class="nav-item nav-itemC">
           <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='article.index') active @endif" href="{{ route('article.index') }}">Tutte le ricette</a>
@@ -81,13 +89,6 @@
           <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='careers') active @endif" aria-current="page" href="{{ route('careers') }}">Lavora con noi</a>
         </li>
 
-        <li class="nav-item nav-itemC">
-          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='chisiamo') active @endif" aria-current="page" href="{{ route('chisiamo') }}">Storia</a>
-        </li>
-
-        <li class="nav-item nav-itemC">
-          <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='contattaci') active @endif" aria-current="page" href="{{ route('contattaci') }}">Chi siamo</a>
-        </li>
 
       </ul>
         

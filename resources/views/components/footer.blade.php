@@ -7,11 +7,16 @@
 
     <!-- Section: Text -->
     <section class="mb-4">
+      
+      <i class="fa-regular fa-lemon h-logo2 p-3"></i>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-        distinctio earum repellat quaerat voluptatibus placeat nam,
-        commodi optio pariatur est quia magnam eum harum corrupti dicta,
-        aliquam sequi voluptate quas.
+        
+        Il nostro footer non contiene link, ma rende il sito più leggibile!
+        <br>
+        Un ringraziamento speciale a tutto il team di Aulab, sempre pronto a risolvere i nostri problemi. Ci auguriamo di essere stati all'altezza del compito assegnato.
+        <br>
+        Trovate tutti i link utili nella navbar, i nostri contatti nella sezione "chi siamo", e per qualsiasi altra informazione cercate su Wikipedia!
+        
       </p>
     {{-- </section>
     <!-- Section: Text -->
@@ -115,7 +120,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2023 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-dark" >diNuovo</a>
   </div>
   <!-- Copyright -->
 

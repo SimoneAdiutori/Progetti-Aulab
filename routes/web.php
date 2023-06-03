@@ -20,9 +20,9 @@ use App\Http\Controllers\RevisorController;
 
 Route::get('/', [PublicController::class , 'homepage'])->name('homepage');
 Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
-Route::get('/chisiamo', [PublicController::class, 'chisiamo'])->name('chisiamo');
+Route::get('/storia', [PublicController::class, 'storia'])->name('storia');
 Route::post('/careers/submit', [PublicController::class, 'careersSubmit'])->name('careers.submit');
-Route::get('/contattaci', [PublicController::class, 'contattaci'])->name('contattaci');
+Route::get('/chisiamo', [PublicController::class, 'chisiamo'])->name('chisiamo');
 
 Route::middleware('admin')->group(function (){
     Route::get('/admin/dashboard' , [AdminController::class , 'dashboard'])->name('admin.dashboard');

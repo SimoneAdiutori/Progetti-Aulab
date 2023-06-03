@@ -1,11 +1,11 @@
 <x-layout>
-    <div class="container-fluid p-5 text-center">
+    {{-- <div class="container-fluid pt-5 text-center">
         <div class="row justify-content-center">
             <div class="container">
-                <h1 class="display-1 font-header">Bentornato Amministratore</h1>
+                <h1 class="display-1 font-header">Dashboard Amministratore</h1>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     @if(session('message'))
         <div class="alert alert-warning text-center m-0">
@@ -16,7 +16,7 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h2>Richieste per ruolo Amministratore</h2>
+                <h2 class="nomecognome text-center">Richieste per Amministratore</h2>
                 <x-requests-table :roleRequests="$adminRequests" role="Amministratore"/>
             </div>
         </div>
@@ -25,26 +25,27 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h2>Richieste per ruolo Revisore</h2>
+                <h2 class="nomecognome text-center">Richieste per Revisore</h2>
                 <x-requests-table :roleRequests="$revisorRequests" role="Revisore"/>
             </div>
         </div>
     </div>
 
     <div class="container my-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="col-12">
-                <h2>Richieste per ruolo Redattore</h2>
+                <h2 class="nomecognome text-center">Richieste per Redattore</h2>
                 <x-requests-table :roleRequests="$writerRequests" role="Redattore"/>
             </div>
         </div>
     </div>
 
-    <hr>
+    <div class="hrC"></div>
+
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h2>I tags della piattaforma</h2>
+                <h2 class="nomecognome text-center">I tags della piattaforma</h2>
                 <x-metainfo-table :metaInfos="$tags" metaType="tags" />
             </div>
         </div>
@@ -69,7 +70,7 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12">
-                <h2>Le categorie della piattaforma</h2>
+                <h2 class="nomecognome text-center">Le categorie della piattaforma</h2>
                 <x-metainfo-table :metaInfos="$categories" metaType="categorie" />
             </div>
         </div>

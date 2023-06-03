@@ -64,7 +64,7 @@ class ArticleController extends Controller
             'body' => 'required|min:10',
             'image' => 'image|required',
             'category' => 'required',
-            'price' => 'required',
+            'price' => 'required|integer',
             'tags' => 'required',
         ]);
 
@@ -164,6 +164,7 @@ class ArticleController extends Controller
 
     public function articleSearch(Request $request){
         $query = $request->input('query');
+        $articles = Article::all()->searchable();
         $articles = Article::search($query)->where('is_accepted', true)->orderBy('created_at', 'desc')->get();
 
         return view('article.search-index', compact('articles', 'query'));

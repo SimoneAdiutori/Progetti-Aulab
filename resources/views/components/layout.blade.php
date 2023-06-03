@@ -24,6 +24,7 @@
 
     @vite(['resources/css/app.css' , 'resources/js/app.js'])
     <title>diNuovo</title>
+    <link rel="icon" type="image/x-icon" href="/media/limone2.svg">
 </head>
 <body class="bg-whiteC" >
 

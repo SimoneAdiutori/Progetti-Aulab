@@ -21,7 +21,7 @@
         <div class="row justify-content-center">
 
             <div class="col-md-8 col-12 d-flex flex-row">
-                <form class="p-5 shadow bg-primaryC rounded formcreateC bodyC" method="POST" action="{{ route('article.store') }}" enctype="multipart/form-data">
+                <form class=" shadow bg-primaryC rounded formcreateC bodyC" method="POST" action="{{ route('article.store') }}" enctype="multipart/form-data">
                     <h1 class="display-1 font-header text-center">Nuova ricetta</h1>
 
                     <div class="container">
@@ -44,6 +44,8 @@
                                     <div class="mb-3">
                                         {{-- <label for="title" class="form-label" >Titolo</label> --}}
                                         <input type="text" class="form-control" placeholder="Titolo" id="title" name="title" value="{{ old('title') }}">
+                                        <span class="small fst-italic">*minimo 5 caratteri</span>
+
                                     </div>
                     
                                     <div class="mb-3">
@@ -58,22 +60,28 @@
                                     <div class="mb-3">
                                         {{-- <label for="body" class="form-label">Descrizione</label> --}}
                                         <textarea class="form-control" placeholder="Descrivi tutti i passaggi" name="body" id="body" cols="30" rows="7">{{ old('body') }}</textarea>
+                                        <span class="small fst-italic">*minimo 10 caratteri</span>
+                                        
                                     </div>
                     
                                     <div class="mb-3">
                                         {{-- <label for="image" class="form-label">Immagine</label> --}}
                                         <input type="file" name="image" class="form-control" id="image">
+                                        <span class="small fst-italic">*immagine obbligatoria</span>
+
                                     </div>
                     
                                     <div class="mb-3">
                                         {{-- <label for="price" class="form-label">Tempo di preparazione</label> --}}
                                         <input type="text" name="price" placeholder="Minuti di preparazione" class="form-control" id="price">
+                                        <span class="small fst-italic">*indicare solo un numero</span>
+                                        
                                     </div>
             
                                     <div class="mb-3">
                                         <label for="tags" class="form-label">Tags:</label>
                                         <input name="tags" class="form-control" id="tags" value="{{old('tags')}}">
-                                        <span class="small fst-italic">Dividi ogni tag con una virgola</span>
+                                        <span class="small fst-italic">*dividi ogni tag con una virgola</span>
                                     </div>
                                     
                                 </form>

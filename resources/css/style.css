@@ -59,6 +59,10 @@
     font-size: 60px;
 }
 
+.h-logo2{
+    font-size: 40px;
+}
+
 .logo-text{
     font-size: 35px;
     font-family: 'darumadrop one';
@@ -167,10 +171,18 @@
     /* background-color: var(--blackC)!important; */
     /* color: var(--whiteC)!important; */
     border-bottom: 5px solid var(--blackC);
+    /* text-decoration: underline; */
     /* margin-bottom: 5px;
     margin-top: 20px; */
     /* border-radius: 10px; */
 }
+
+@media screen and (max-width:450px) {
+    .active {
+        text-decoration: underline;
+        border-bottom: none;
+    }
+    }
 
 .custom-puntino{
     list-style-type:none;
@@ -240,10 +252,20 @@
     object-fit: contain;
 }
 
+@media screen and (max-width:450px) {
+
+    .video-wrapper-create{
+        display: none;
+    
+    }
+
+    }
+
 video {
     object-fit: cover;
     width: 100%;   
-    border: 5px solid var(--blackC); 
+    border: 5px solid var(--blackC);
+    margin: 0px;
 }
 
 .headerC {
@@ -277,32 +299,31 @@ video {
 .btnC:hover{
     border: 5px solid var(--blackC);
     border-left: none;
+}
 
+.btnC2{
+    background-color: var(--primaryC);
+    border: 2px solid var(--blackC);
+}
+
+.btnC2:hover{
+    background-color: var(--blackC);
+    color: var(--primaryC);
 }
 
 .separatore {
-    height: 100px;
+    height: 200px;
 }
 
 .separatore-navbar{
     width: 200px;
 }
 
-@media screen and (min-width:1500px) {
-    .separatore {
-        height: 300px;
-    }
-}
 
-@media screen and (min-width:1800px) {
-    .separatore {
-        height: 400px;
-    }
-}
 
 @media screen and (max-width:500px) {
     .separatore {
-        display: no;
+        display: none;
     }
 
     .headerC {
@@ -314,17 +335,6 @@ video {
     }
 }
 
-@media screen and (max-width:700px) {
-    .separatore {
-        height: 200px;
-    }
-}
-
-@media screen and (max-width:700px) {
-    .separatore {
-        height: 200px;
-    }
-}
 
 .cardC {
     height: 300px;
@@ -371,6 +381,10 @@ video {
     margin-bottom: 0px;
     color: var(--blackC);
 
+}
+
+.textC {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .categoryC{
@@ -487,7 +501,8 @@ video {
     width: 100%;
     height: 5px;
     background-color: var(--blackC);
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .formloginC{
@@ -500,7 +515,15 @@ video {
     border: 5px solid var(--blackC);
     background-color: var(--primaryC);
     text-align: start;
+    padding: 20px;
 }
+
+@media screen and (max-width:450px) {
+    .formcreateC{
+        padding: 15px;
+    }
+    }
+
 
 .tendina-login2{
     background-color: var(--whiteC);
@@ -680,4 +703,148 @@ footer{
 
 .img-chisiamo{
     object-fit: cover;
+}
+
+.imgchisiamo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenitore{
+    /* width: 320px; */
+    margin-top: 40px;
+    /* margin-right: 20px; */
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content:start; */
+    /* padding-top: 20px; */
+    /* border: 5px solid var(--blackC); */
+    /* background-color: var(--primaryC); */
+}
+
+.contenitore2{
+    border: 5px solid var(--blackC);
+    height: 100%;
+    padding-top: 20px;
+    background-color: var(--primaryC);
+    /* padding: 10px; */
+}
+
+.testo-chisiamo{
+    /* border: 3px solid var(--blackC); */
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'staatliches';
+    color: var(--blackC);
+}
+
+.logo-chisiamo {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--blackC);
+}
+
+.logolink {
+    text-decoration: none;
+    color: var(--blackC);
+}
+
+.cards-cont {
+    margin-bottom: 50px;
+} 
+
+.form-career{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tableC{
+    background-color: var(--primaryC);
+}
+
+.formCdash{
+    width: 50%;
+    margin-right: ;
+}
+
+@media screen and (max-width:450px) {
+    .formCdash{
+        width: 100%;
+    }
+    }
+
+
+.ashC {
+    width: 10%;
+}
+
+.nomeC {
+    width: 20%;
+}
+
+.emailC{
+    width: 60%;
+}
+
+.azioniC {
+    width: 20%;
+}
+
+.ricetteC2 {
+    width: 10%;
+}
+
+.aggiornaC2 {
+    width: 50%;
+}
+
+.cancellaC2 {
+    width: 20%;
+}
+
+.azioniC {
+    width: 10%;
+}
+
+.redattoreC {
+    width: 20%;
+}
+
+
+
+
+.th1{
+    width: 5%;
+}
+
+.th2{
+    width: 25%;
+}
+
+.th3{
+    width: 15%;
+}
+
+.th4{
+    width: 10%;
+}
+
+.th5{
+    width: 10%;
+}
+
+.th6{
+    width: 30%;
+}
+
+.th6{
+    width: 10%;
+}
+
+.btnCrevisor {
+    width: auto;
+    margin: 10px;
 }

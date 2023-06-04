@@ -87,12 +87,31 @@
                                 </form>
                                 
                             </div>
+                            
+                    <div class="div-C">
+                        <button type="" class=" btn-primary freccia bg-primaryC">
+                            <i class="fa-solid fa-arrow-right"></i>                      
+    
+                        </button>
+    
+                    </div>
                         </div>
                         
-                <div class="div-C">
-                    <button type="" class="btn btn-primary btn-login">Inserisci</button>
 
-                </div>
+          
+
+{{-- 
+                <div class= "text-muted freccetta">
+                    <a href="{{ route('article.show', compact('article')) }}" class="btn bg-primaryC freccia"> 
+                            
+                        <div>
+                            <i class="fa-solid fa-arrow-right freccia3"></i>                      
+                        </div>
+
+                    </a>
+                </div> --}}
+
+
                     </div>
 
 

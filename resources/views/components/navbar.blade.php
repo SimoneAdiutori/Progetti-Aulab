@@ -65,7 +65,7 @@
   <div class="container-fluid text-center ">
 
     {{-- LOGO --}}
-    <a class="navbar-brand text-blackC p-2 rounded navbar-logoC" href="{{ route('homepage') }}"> 
+    <a class="navbar-brand text-blackC ps-3 p-2 rounded navbar-logoC2" href="{{ route('homepage') }}"> 
       <i class="fa-regular fa-lemon h-logo"></i>
     </a>
     <button class="navbar-toggler tendina-login" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

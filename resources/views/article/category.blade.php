@@ -12,9 +12,9 @@
         <div class="row justify-content-center">
             @foreach($articles as $article)
 
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 cardC1">
 
-                <div class="card text-bg-dark cardC">
+                <div class="card text-bg-dark cardC ">
 
                     {{-- IMMAGINE (SFONDO) --}}
                     <img src="{{ Storage::url($article->image) }}" class="card-img card-imgC" alt="immagine articolo">
@@ -26,7 +26,7 @@
                         <div class=" boxcard1">
 
                             {{-- TITOLO --}}
-                            <h5 class="card-title card-titleC">{{ $article->title }}</h5>
+                            <h5 class="card-title card-titleC card-titleC2">{{ $article->title }}</h5>
 
                             {{-- CATEGORIA --}}
                             <p class="categoryC">
@@ -34,7 +34,7 @@
                                 
                                 @if($article->category)
                                 
-                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted text-capitalize card-categoryC">{{$article->category->name}}</a>
+                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted  text-capitalize card-categoryC">{{$article->category->name}}</a>
                                 
                                 @else
                                 
@@ -50,7 +50,7 @@
                         </div >
 
                         {{-- TAG --}}
-                        <div class="bg-whiteC tagC">
+                        <div class="bg-whiteC tagC ">
 
                             <p class="small fst-italic text-capitalize card-tagC">
                                 @foreach($article->tags as $tag)
@@ -65,7 +65,7 @@
                             <a href="{{ route('article.show', compact('article')) }}" class="btn bg-primaryC freccia"> 
                                     
                                 <div>
-                                    <i class="fa-solid fa-arrow-right freccia3"></i>                      
+                                    <i class="fa-solid fa-arrow-right"></i>                      
                                 </div>
 
                             </a>

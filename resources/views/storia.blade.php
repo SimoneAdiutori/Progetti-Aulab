@@ -120,7 +120,7 @@
                 {{-- <h2> È una questione di tradizione e storia, esperienze ed emozioni. È cultura.</h2> --}}
                     <p>
 
-                        ​Nati nel 2023, oggi siamo un magazine multimediale che pubblica ricette online
+                        ​Nati nel 2023, siamo un magazine multimediale che pubblica ricette online
                         <br>
                         I nostri obiettivi sono:
 

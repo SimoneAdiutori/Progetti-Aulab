@@ -31,13 +31,19 @@
                                 <div class="testo-chisiamo">
                                     <h2 class="nomechisiamo">Simone</h3>
                                     <h2 class="cognomechisiamo">Adiutori</h2>
-                                    <div class="logo-chisiamo">
-                                        <a class="logolink" href="https://github.com/SimoneAdiutori">
-                                            <i class="fa-brands fa-github"></i>
-                                        </a>
-                                        <a class="logolink" href="https://www.linkedin.com/in/simone-adiutori-junior-web-developer/">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a>
+                                    <div class="logo-chisiamo d-flex justify-content-center">
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://github.com/GiuseppeCalabrese003">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://www.linkedin.com/in/giuseppe-calabrese-web-developer-junior/">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+
+                                        </div>
                                     </div>
                                 </div>
 
@@ -56,13 +62,19 @@
                                 <div class="testo-chisiamo">
                                     <h2 class="nomechisiamo">Giuseppe</h3>
                                     <h2 class="cognomechisiamo">Calabrese</h2>
-                                    <div class="logo-chisiamo">
-                                        <a class="logolink" href="https://github.com/GiuseppeCalabrese003">
-                                            <i class="fa-brands fa-github"></i>
-                                        </a>
-                                        <a class="logolink" href="https://www.linkedin.com/in/giuseppe-calabrese-web-developer-junior/">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a>
+                                    <div class="logo-chisiamo d-flex justify-content-center">
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://github.com/GiuseppeCalabrese003">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://www.linkedin.com/in/giuseppe-calabrese-web-developer-junior/">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+
+                                        </div>
                                     </div>
                                 </div>
 
@@ -80,13 +92,20 @@
         
                                 <div class="testo-chisiamo">
                                     <h2 class="nomechisiamo">Paolo</h3>
-                                    <h2 class="cognomechisiamo">Garcia</h2>                                    <div class="logo-chisiamo">
-                                        <a class="logolink" href="https://github.com/Paologa00">
-                                            <i class="fa-brands fa-github"></i>
-                                        </a>
-                                        <a class="logolink" href="https://www.linkedin.com/in/paolo-garcia-web-developer-junior/">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a>
+                                    <h2 class="cognomechisiamo">Garcia</h2>                                    
+                                    <div class="logo-chisiamo d-flex justify-content-center">
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://github.com/GiuseppeCalabrese003">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://www.linkedin.com/in/giuseppe-calabrese-web-developer-junior/">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+
+                                        </div>
                                     </div>
                                 </div>
 
@@ -104,13 +123,20 @@
         
                                 <div class="testo-chisiamo">
                                     <h2 class="nomechisiamo">Alvise</h3>
-                                    <h2 class="cognomechisiamo">Masenello</h2>                                    <div class="logo-chisiamo">
-                                        <a class="logolink" href="https://github.com/alvisemasenello">
-                                            <i class="fa-brands fa-github"></i>
-                                        </a>
-                                        <a class="logolink" href="https://www.linkedin.com/in/alvise-masenello-junior-dev/">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a>
+                                    <h2 class="cognomechisiamo">Masenello</h2>                                    
+                                    <div class="logo-chisiamo d-flex justify-content-center">
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://github.com/GiuseppeCalabrese003">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="logolink1">
+                                            <a class="logolink" href="https://www.linkedin.com/in/giuseppe-calabrese-web-developer-junior/">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+
+                                        </div>
                                     </div>
                                 </div>
 

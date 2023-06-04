@@ -65,6 +65,9 @@
                             
                 </div>
                 
+
+
+
                 {{-- VIDEO --}}
                 <div class="video-wrapper">
     
@@ -87,8 +90,8 @@
     
     <div class="">
 
-        <a class="d-flex justify-content-center veditutti veditutti2">Le ultime ricette inserite... 
-        </a>
+        <div class="d-flex justify-content-center ultimericette">Le ultime ricette inserite... 
+        </div>
 
     </div>
 
@@ -98,7 +101,7 @@
 
             @foreach($articles as $article)
 
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-12 cardC1">
 
                 <div class="card text-bg-dark cardC">
 

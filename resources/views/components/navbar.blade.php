@@ -4,11 +4,23 @@
   @auth
 
   <li class=" nav-item dropdown d-flex justify-content-md-end justify-content-center">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle pe-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       {{ Auth::user()->name }}
     </a>
-    <ul class="dropdown-menu dropdown-menu-end tendina-login2 ">
+    <ul class="dropdown-menu dropdown-menu-end tendina-login2">
 
+      @if(Auth::user()->is_writer)
+      
+      <li class=" dropd1">
+        <a class="dropdown-item" href="{{ route('article.create') }}">Nuova ricetta</a>
+      </li>
+      <div class="div-nav"> </div>
+
+      <li class="">
+        <a class="dropdown-item" href="{{ route('writer.dashboard') }}">Dashboard Redattore</a>
+      </li>
+
+      @endif
       @if(Auth::user() && Auth::user()->is_admin)
       <li class="">
         <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
@@ -21,21 +33,13 @@
       </li>
       @endif
 
-      @if(Auth::user()->is_writer)
-      <li class="">
-        <a class="dropdown-item" href="{{ route('writer.dashboard') }}">Dashboard Redattore</a>
-      </li>
-      @endif
+      {{-- @endif
 
-      @if(Auth::user() && Auth::user()->is_writer)
-      <li class="">
-        <a class="dropdown-item" href="{{ route('article.create') }}">Nuova ricetta</a>
-      </li>
-      @endif
+      @if(Auth::user() && Auth::user()->is_writer) --}}
       
+      <div class="div-nav"></div>
 
-
-      <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Esci</a></li>
+      <li class="dropd2"><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Esci</a></li>
       <form action=" {{ route('logout') }}" method="POST" class="d-none" id="form-logout">@csrf</form>
     </ul>
   </li>
@@ -45,7 +49,7 @@
   
       <li class="custom-puntino p-1"><a class="btn-nav" href="{{ route('login') }}">Accedi</a></li>
       <span> | </span>
-      <li class="custom-puntino p-1"><a class="btn-nav" href="{{ route('register') }}">Registrati</a></li>
+      <li class="custom-puntino p-1 me-1"><a class="btn-nav" href="{{ route('register') }}">Registrati</a></li>
 
   @endauth
 
@@ -73,12 +77,26 @@
 
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
+        
         <li class="nav-item nav-itemC">
           <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='chisiamo') active @endif" aria-current="page" href="{{ route('chisiamo') }}">Chi siamo</a>
         </li>
         
+        
         <li class="nav-item nav-itemC">
           <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='storia') active @endif" aria-current="page" href="{{ route('storia') }}">Storia</a>
+        </li>
+
+        <li class="nav-item dropdown nav-itemC navcategorie">
+          <a class="nav-link fs-5 mx-3 dropdown-toggle @if(Route::currentRouteName() == 'article.byCategory') active @endif" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorie
+          </a>
+          <ul class="dropdown-menu tendina-login2 text-center align-items-center prova11">
+            @foreach ($categories as $category)
+            <li><a class="dropdown-item" href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a></li>
+
+            @endforeach                          
+          </ul>
         </li>
         
         <li class="nav-item nav-itemC">

@@ -38,7 +38,9 @@
         }
 
         .font-custom{
-            font-size: 20px;
+            font-size: 18px;
+            margin-top: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         } 
 
         .font-5{
@@ -48,6 +50,28 @@
         .div-pers{
             width: 50%;
             margin: auto;
+            
+        }
+        .messaggio{
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .fontpiccolo{
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .fontgrande {
+            font-size: 23px;
+            font-family: 'Francois One';
+            margin-top: 0px
+        }
+
+        .fontgrande1 {
+            font-size: 45px;
+            font-family: 'Francois One';
+            margin-top: 0px
         }
     </style>
 </head>
@@ -55,12 +79,25 @@
 
     <i class="fa-regular fa-lemon h-logo text-center display-1 justify-content-center d-flex align-items-center my-5"></i>
     <h1 class="text-center display-1 font1 my-5">ABBIAMO RICEVUTO LA TUA RICHIESTA!</h1>
-    <p class="text-center font-5 my-3 ">Ruolo: <span class="font-weight" >{{$info['role']}}</span> </p>
-    <p class="text-center font-5 my-3"><span class="font-weight">{{$info['email']}}</span> </p>
 
-    <h4 class="text-center font-5"></h4>
-    <div class="div-pers align-items-center justify-content-center d-flex">
-        <p class="font-5 my-3 align-items-center justify-content-center d-flex font-custom text-center">{{$info['message']}}</p>
+    <p class="text-center fontpiccolo">ruolo:</p>
+    <p class="text-center fontgrande1">{{$info['role']}}</p>
+
+    <p class="text-center fontpiccolo">email:</p>
+    <p class="text-center fontgrande">{{$info['email']}}</p>
+
+
+    {{-- <p class="text-center font-5 my-3 ">
+        <span class="font-weight" >{{$info['role']}}</span> 
+    </p>
+    <p class="text-center font-5 my-3">
+        <span class="font-weight ">{{$info['email']}}</span> 
+    </p> --}}
+
+    {{-- <h4 class="text-center font-5"></h4> --}}
+    <div class="div-pers align-items-center justify-content-center d-flex flex-column">
+        <p class="mt-5 align-items-center justify-content-center d-flex text-center messaggio ">il tuo messaggio:</p>
+        <p class="align-items-center justify-content-center d-flex font-custom text-center">{{$info['message']}}</p>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

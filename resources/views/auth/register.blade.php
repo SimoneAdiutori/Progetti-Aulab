@@ -10,10 +10,10 @@
     
     <div class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-4">
             <form class="p-5 card formloginC" method="POST" action=>
                 @csrf
-                <h1 class="display-5 font-header">Registrati</h1>
+                <h1 class="display-5 font-header pb-3">Registrati</h1>
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Nome Utente</label>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
 
-                <button type="submit" class="btn btn-primary btn-login">Registrati</button>
+                <button type="submit" class="btn btn-primary btn-login mt-4">Registrati</button>
                 </div>
                 <p class="small mt-2">Sei gia registrato? <a href="{{ route('login') }}">Clicca qui</a></p>
             

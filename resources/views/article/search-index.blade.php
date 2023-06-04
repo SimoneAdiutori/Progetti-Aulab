@@ -35,7 +35,7 @@
                                 
                                 @if($article->category)
                                 
-                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize card-categoryC">{{$article->category->name}}</a>
+                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted text-capitalize card-categoryC">{{$article->category->name}}</a>
                                 
                                 @else
                                 

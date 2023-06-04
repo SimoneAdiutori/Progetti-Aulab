@@ -19,6 +19,7 @@ use App\Http\Controllers\RevisorController;
 */
 
 Route::get('/', [PublicController::class , 'homepage'])->name('homepage');
+
 Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
 Route::get('/storia', [PublicController::class, 'storia'])->name('storia');
 Route::post('/careers/submit', [PublicController::class, 'careersSubmit'])->name('careers.submit');

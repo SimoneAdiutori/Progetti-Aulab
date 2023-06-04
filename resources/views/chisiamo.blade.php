@@ -29,7 +29,8 @@
                                 </div>
         
                                 <div class="testo-chisiamo">
-                                    <h3>Simone Adiutori</h3>
+                                    <h2 class="nomechisiamo">Simone</h3>
+                                    <h2 class="cognomechisiamo">Adiutori</h2>
                                     <div class="logo-chisiamo">
                                         <a class="logolink" href="https://github.com/SimoneAdiutori">
                                             <i class="fa-brands fa-github"></i>
@@ -53,7 +54,8 @@
                                 </div>
         
                                 <div class="testo-chisiamo">
-                                    <h3>Giuseppe Calabrese</h3>
+                                    <h2 class="nomechisiamo">Giuseppe</h3>
+                                    <h2 class="cognomechisiamo">Calabrese</h2>
                                     <div class="logo-chisiamo">
                                         <a class="logolink" href="https://github.com/GiuseppeCalabrese003">
                                             <i class="fa-brands fa-github"></i>
@@ -77,8 +79,8 @@
                                 </div>
         
                                 <div class="testo-chisiamo">
-                                    <h3>Paolo Garcia</h3>
-                                    <div class="logo-chisiamo">
+                                    <h2 class="nomechisiamo">Paolo</h3>
+                                    <h2 class="cognomechisiamo">Garcia</h2>                                    <div class="logo-chisiamo">
                                         <a class="logolink" href="https://github.com/Paologa00">
                                             <i class="fa-brands fa-github"></i>
                                         </a>
@@ -101,8 +103,8 @@
                                 </div>
         
                                 <div class="testo-chisiamo">
-                                    <h3>Alvise Masenello</h3>
-                                    <div class="logo-chisiamo">
+                                    <h2 class="nomechisiamo">Alvise</h3>
+                                    <h2 class="cognomechisiamo">Masenello</h2>                                    <div class="logo-chisiamo">
                                         <a class="logolink" href="https://github.com/alvisemasenello">
                                             <i class="fa-brands fa-github"></i>
                                         </a>

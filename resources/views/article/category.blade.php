@@ -3,7 +3,7 @@
     <div class="container-fluid p-5 text-center">
         <div class="row justify-content-center">
             <div class="container">
-                <h1 class="display-1 font-header">{{ $category->name }}</h1>
+                <h1 class="display-5 lavori">{{ $category->name }}</h1>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
                                 
                                 @if($article->category)
                                 
-                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize card-categoryC">{{$article->category->name}}</a>
+                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted text-capitalize card-categoryC">{{$article->category->name}}</a>
                                 
                                 @else
                                 

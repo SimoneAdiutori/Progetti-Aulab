@@ -8,12 +8,12 @@
         </div>
     </div> --}}
 
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-5">
+    <div class="container my-5 ">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-md-4 contenitor">
                 <form class="p-5 card formloginC" method="POST" action=>
                 @csrf
-                    <h1 class="display-5 font-header">Accedi</h1>
+                    <h1 class="display-5 font-header pb-3">Accedi</h1>
                 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="d-flex justify-content-center">
 
-                    <button type="submit" class="btn btn-primary btn-login">Accedi</button>
+                    <button type="submit" class="btn btn-primary btn-login mt-4">Accedi</button>
                 </div>
                 <p class="small mt-2">Non sei registrato? <a href="{{ route('register') }}">Clicca qui</a></p> 
             </form>

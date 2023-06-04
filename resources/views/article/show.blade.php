@@ -24,8 +24,10 @@
             <div class="col-12 col-md-8 ">
 
                 <p class="text-start bodyC"> {{ $article->body }} </p>
-                <hr>
-                <p class="text-center p-2 text-muted"> Creato il : {{ $article->created_at->format('d/m/Y') }} da <a href="{{route('article.byUser', ['user'=>$article->user->id])}}" class="small text-muted text-center">{{$article->user->name}}</a> </p>
+                
+                <div class="hrC"></div>
+        
+                <p class="text-center p-2 bodyC"> Creato il: {{ $article->created_at->format('d/m/Y') }} da <a href="{{route('article.byUser', ['user'=>$article->user->id])}}" class="text-center bodyC">{{$article->user->name}}</a> </p>
 
 
                 <div class="row justify-content-center align-items-beetween">

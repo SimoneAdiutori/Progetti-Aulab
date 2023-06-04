@@ -1,6 +1,6 @@
 <x-layout>
     @if(session('message'))
-        <div class="alert alert-warning text-center m-0">
+        <div class="alert alert-success text-center m-0 alertC">
             {{session('message')}}
         </div>
     @endif
@@ -54,12 +54,10 @@
 
                     <form class="d-flex align-items-end" method="GET" action="{{route('article.search')}}" role="search">
                         
-                        <div class="input-group mb-3 ">
+                        <div class="input-group mb-3 searchgroup">
                             <input class="form-control form-controlC" type="search" name="query" placeholder="Cosa bolle in pentola?" aria-label="Search">
                             <button class="btn bg-white btnC" type="submit">
                                 <i class="fa-solid fa-arrow-right"></i>
-
-                                {{-- <i class="fa-solid fa-magnifying-glass"></i> --}}
                             </button>
                         </div>                        
                         
@@ -71,7 +69,7 @@
                 <div class="video-wrapper">
     
                     <video playsinline autoplay muted loop id="myVideo">
-                        <source src="/media/uovo.mp4" type="video/mp4">
+                        <source src="/media/mais.mp4" type="video/mp4">
                     </video>
     
                 </div>
@@ -89,7 +87,7 @@
     
     <div class="">
 
-        <a class="d-flex justify-content-center veditutti">Le ultime ricette inserite... 
+        <a class="d-flex justify-content-center veditutti veditutti2">Le ultime ricette inserite... 
         </a>
 
     </div>
@@ -105,8 +103,10 @@
                 <div class="card text-bg-dark cardC">
 
                     {{-- IMMAGINE (SFONDO) --}}
+        
                     <img src="{{ Storage::url($article->image) }}" class="card-img card-imgC" alt="immagine articolo">
 
+                
                     {{-- CORPO --}}
                     <div class="card-img-overlay boxC">
                         
@@ -122,7 +122,7 @@
                                 
                                 @if($article->category)
                                 
-                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted fst-italic text-capitalize card-categoryC">{{$article->category->name}}</a>
+                                <a href="{{route('article.byCategory', ['category' => $article->category->id])}}" class="small text-muted text-capitalize card-categoryC">{{$article->category->name}}</a>
                                 
                                 @else
                                 
@@ -174,7 +174,7 @@
 
         <div class="vedituttiC">
 
-            <a href="{{route('article.index')}}" class="d-flex justify-content-center veditutti">Vedi tutti 
+            <a href="{{route('article.index')}}" class="d-flex justify-content-center veditutti">Vedi tutte 
                 <i class="fa-solid fa-arrow-right freccia3"></i>
             </a>
 

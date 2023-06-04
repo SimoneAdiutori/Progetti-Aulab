@@ -23,13 +23,13 @@
                     <div class="card-img-overlay boxC">
                         
                         {{-- TITOLO E CATEGORIA --}}
-                        <div class=" boxcard1">
+                        <div class=" boxcard1 mt-3">
 
                             {{-- TITOLO --}}
                             <h5 class="card-title card-titleC card-titleC2">{{ $article->title }}</h5>
 
                             {{-- CATEGORIA --}}
-                            <p class="categoryC">
+                            {{-- <p class="categoryC">
                                 <small>
                                 
                                 @if($article->category)
@@ -45,7 +45,7 @@
                                 @endif
     
                                 </small>
-                            </p>
+                            </p> --}}
                             
                         </div >
 

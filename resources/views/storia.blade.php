@@ -116,50 +116,50 @@
 
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-8 testichisiamo">
+            <div class="col-12 col-md-8 testichisiamo text-center">
                 {{-- <h2> È una questione di tradizione e storia, esperienze ed emozioni. È cultura.</h2> --}}
-                    <p>
+                    <p class="liC2">
 
                         ​Nati nel 2023, siamo un magazine multimediale che pubblica ricette online
                         <br>
                         I nostri obiettivi sono:
 
                     </p>
-                    <ul>
-                        <li class="liC2">
+                    <ul class="ps-0">
+                        <li class="liC2 pt-5">
                             <span class="liC">
                                 LASCIARE IL SEGNO 
                             </span>
                             <br>
                             Avere un impatto a lungo termine sull’industria della ristorazione attraverso contenuti ricchi di informazioni ed ispirazione al fine di catturare l’attenzione e l’interesse del nostro pubblico.
                         </li>
-                        <li class="liC2">
+                        <li class="liC2 pt-4">
                             <span class="liC">
                                 CONNETTERE
                             </span>
                             <br>
                             Mostrare che il cibo è il più importante connettore culturale che abbiamo a disposizione.
                         </li>
-                        <li class="liC2">
+                        <li class="liC2 pt-4">
                             <span class="liC">ISPIRARE</span>
                             <br>
                             Ispirare le persone a viaggiare avendo il cibo come bussola.
                         </li>
-                        <li class="liC2">
+                        <li class="liC2 pt-4">
                             <span class="liC">
                                 INCLUDERE
                             </span>
                             <br>
                             Focalizzarci sull’importanza dell’inclusione all’interno dell’industria gastronomica.
                         </li>
-                        <li class="liC2">
+                        <li class="liC2 pt-4">
                             <span class="liC">EDUCARE</span>
                             <br>
                             Insegnare alle persone come cucinare cibo delizioso nella propria cucina.
                         </li>
 
                     </ul>
-                    <p>
+                    <p class="pt-5 liC2">
                         Promuoviamo l’inclusione e l’equità nell’industria gastronomica attraverso contenuti che siano di ispirazione, per aiutare i nostri lettori ad essere sempre ispirati e a scoprire piatti sempre nuovi.
                     </p>
                     

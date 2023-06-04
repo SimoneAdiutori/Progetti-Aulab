@@ -87,13 +87,13 @@
           <a class="nav-link fs-5 mx-3 @if(Route::currentRouteName()=='storia') active @endif" aria-current="page" href="{{ route('storia') }}">Storia</a>
         </li>
 
-        <li class="nav-item dropdown nav-itemC navcategorie">
+        <li class="nav-item dropdown  navcategorie">
           <a class="nav-link fs-5 mx-3 dropdown-toggle @if(Route::currentRouteName() == 'article.byCategory') active @endif" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorie
           </a>
           <ul class="dropdown-menu tendina-login2 text-center align-items-center prova11">
             @foreach ($categories as $category)
-            <li><a class="dropdown-item" href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a></li>
+            <li><a class="dropdown-item nav-itemC navico" href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a></li>
 
             @endforeach                          
           </ul>

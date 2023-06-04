@@ -536,7 +536,7 @@ video {
 }
 
 .separatore-navbar{
-    width: 200px;
+    width: 150px;
 }
 
 
@@ -681,12 +681,19 @@ video {
 
 .navcategorie{
     margin-right: -10px;
+    font-family: 'staatliches';
+    
 }
 
 .underline{
     text-decoration: underline;
     /* border-bottom: 5px solid var(--blackC); */
     color: var(--blackC);
+}
+
+.navico:hover{
+    background-color: var(--primaryC);
+    border: 2px solid var(--blackC);
 }
 
 .buttonC{
@@ -749,10 +756,12 @@ video {
 
 .tendina-login2{
     background-color: var(--whiteC);
-    border: 5px solid var(--blackC);
+    border: 3px solid var(--blackC);
     padding-top: 0px;
     padding-bottom: 0px;
     z-index: 2;
+    border-radius: 0px;
+    height: 170px
 }
 
 .dropd1{
@@ -910,13 +919,14 @@ footer{
 
 .liC{
     font-family: 'Francois One';
-    font-size: 20px;
+    font-size: 26px;
 
 }
 
 .liC2{
     text-decoration: none;
     list-style-type: none;
+    font-size: 20px;
 }
 
 
